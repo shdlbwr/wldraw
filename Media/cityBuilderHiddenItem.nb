@@ -1,0 +1,1546 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     86537,       1538]
+NotebookOptionsPosition[     85751,       1516]
+NotebookOutlinePosition[     86145,       1532]
+CellTagsIndexPosition[     86102,       1529]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Add Graphics or Image to list below", "Subsection",
+ CellChangeTimes->{{3.797540858648964*^9, 3.797540909911305*^9}, {
+  3.797541145898118*^9, 
+  3.797541154597301*^9}},ExpressionUUID->"b4897942-541a-45ab-a161-\
+02fd2b80fbdf"],
+
+Cell[CellGroupData[{
+
+Cell["ImageSize and PlotRange does not matter", "Item",
+ CellChangeTimes->{{3.797540915884637*^9, 3.7975409174763517`*^9}, {
+  3.797543026195302*^9, 
+  3.79754302968019*^9}},ExpressionUUID->"dfe500b9-782d-41d6-a434-\
+14728a8f54ae"],
+
+Cell["Images need alpha channel to knockout image background", "Item",
+ CellChangeTimes->{{3.797540915884637*^9, 3.797540954173828*^9}, {
+  3.79754111120579*^9, 3.797541136283284*^9}, {3.797541182123748*^9, 
+  3.797541182890345*^9}, {3.797551327089073*^9, 
+  3.797551327089183*^9}},ExpressionUUID->"15b30c48-8c3d-4289-b405-\
+5c1d2a50bf78"],
+
+Cell["\<\
+BSplineCurve and BezierCurve points affect padding so convert to polygon \
+points\
+\>", "Item",
+ CellChangeTimes->{{3.797540915884637*^9, 3.797540954173828*^9}, {
+  3.79754111120579*^9, 3.797541136283284*^9}, {3.797541182123748*^9, 
+  3.797541182890345*^9}, {3.797551328267161*^9, 
+  3.797551413248152*^9}},ExpressionUUID->"13120142-344f-4530-93a4-\
+59290511182e"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[
+    {AbsolutePointSize[4], CapForm["Round"], JoinForm["Round"], Arrowheads[
+     Medium], {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{0.1, 0.8}, {0.30705438261641305`, 1.173789829072348}, {
+         0.6000000000000001, 1.2000000000000002`}, {0.6000000000000001, 
+         1.2000000000000002`}, {0.6000000000000001, 1.2000000000000002`}, {
+         0.7423218191009143, 0.5}, {0.39999999999999997`, 0.5}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.1, 0.8}, {-0.30705438261641316`, 
+         1.1737898290723483`}, {-0.6000000000000001, 
+         1.2000000000000002`}, {-0.6000000000000001, 
+         1.2000000000000002`}, {-0.6000000000000001, 
+         1.2000000000000002`}, {-0.7423218191009142, 
+         0.5}, {-0.4000000000000001, 0.5}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+       RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.9000076295109484, 0.779995422293431, 0.5400015259021896]], 
+       FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2fNRMETu6/dX1S3OyK03A+zAYYv+Ali/DGM9vsIfyH+w+o
+pqR5Hj8J50PMfwzn79KbkrKc/YU9+zvu2+aWl/efPQMCb+xh5sL4HBB5exgf
+qt9+J1Q/jI9mvn2GTI+G9E2Y/Sft81Dcd9Iezf32MP9B/W/fNN++77fVNTgf
+LXzs1z/IC+9h/bC/AxK+9rDwRQ9/AErUseU=
+         "]]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.21408918227176627`, 0.75}, {-0.10273501413484251`, 
+         0.75}, {-0.05808918227176624, 
+         0.6993781469164113}, {-0.05808918227176624, 
+         0.5940000000000001}, {-0.05808918227176624, 
+         0.48862185308358885`}, {-0.13398443593966458`, 
+         0.43800000000000006`}, {-0.2920891822717662, 
+         0.43800000000000006`}, {-0.450193928603868, 
+         0.43800000000000006`}, {-0.4069493918685672, 
+         0.75}, {-0.21408918227176627`, 0.75}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{-0.162, 0.6900000000000001}, {-0.13340000000000005`, 
+         0.6900000000000001}, {-0.11000000000000001`, 
+         0.6666}, {-0.11000000000000001`, 0.638}, {-0.11000000000000001`, 
+         0.6093999999999999}, {-0.13340000000000005`, 
+         0.5860000000000001}, {-0.162, 
+         0.5860000000000001}, {-0.19060000000000002`, 
+         0.5860000000000001}, {-0.21400000000000005`, 
+         0.6093999999999999}, {-0.21400000000000005`, 
+         0.638}, {-0.21400000000000005`, 0.6666}, {-0.19060000000000002`, 
+         0.6900000000000001}, {-0.162, 0.6900000000000001}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{0.20813021945972515`, 0.7499999999999999}, {
+         0.09677605132280145, 0.7499999999999999}, {0.05213021945972518, 
+         0.6993781469164113}, {0.05213021945972518, 0.5940000000000001}, {
+         0.05213021945972518, 0.48862185308358874`}, {0.12802547312762347`, 
+         0.43800000000000006`}, {0.2861302194597252, 0.43800000000000006`}, {
+         0.4442349657918268, 0.43800000000000006`}, {0.40099042905652604`, 
+         0.7499999999999999}, {0.20813021945972515`, 
+         0.7499999999999999}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{0.15604103718795892`, 0.69}, {0.12744103718795893`, 
+         0.69}, {0.1040410371879589, 0.6666}, {0.1040410371879589, 
+         0.6379999999999999}, {0.1040410371879589, 0.6093999999999999}, {
+         0.12744103718795893`, 0.5860000000000001}, {0.15604103718795892`, 
+         0.5860000000000001}, {0.1846410371879589, 0.5860000000000001}, {
+         0.20804103718795894`, 0.6093999999999999}, {0.20804103718795894`, 
+         0.6379999999999999}, {0.20804103718795894`, 0.6666}, {
+         0.1846410371879589, 0.69}, {0.15604103718795892`, 0.69}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FaceForm[RGBColor[
+       0.395304448, 0.22095564799999998`, 0.052422144000000004`]], 
+       FilledCurveBox[
+        BezierCurve[{{0., 0.3}, {-0.0463755720980156, 0.3}, {-0.1, 
+         0.35595942392400864`}, {-0.1, 0.39999999999999997`}, {-0.1, 
+         0.4440405760759913}, {-0.09327652386127552, 0.45}, {0., 0.45}, {
+         0.0932765238612755, 0.45}, {0.1, 0.4440405760759914}, {0.1, 
+         0.39999999999999997`}, {0.1, 0.35595942392400864`}, {
+         0.04637557209801557, 0.3}, {0., 0.3}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.45, -1.}, {-0.45, -1.}, {-0.45014298995938945`, \
+-0.7000000000000001}, {-0.25000000000000006`, -0.7000000000000001}, \
+{-0.049857010040610564`, -0.7000000000000001}, {-0.05, -1.}, {-0.05, -1.}, \
+{-0.05, -1.}, {-0.45, -1.}, {-0.45, -1.}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{0.049999999999999975`, -1.}, {
+         0.049999999999999975`, -1.}, {
+         0.049857010040610536`, -0.7000000000000001}, {
+         0.25000000000000006`, -0.7000000000000001}, {
+         0.45014298995938945`, -0.7000000000000001}, {0.45, -1.}, {
+         0.45, -1.}, {0.45, -1.}, {0.049999999999999975`, -1.}, {
+         0.049999999999999975`, -1.}}]]}}, 
+     {AbsoluteThickness[0.5], EdgeForm[AbsoluteThickness[0.5]], FaceForm[
+      RGBColor[0.6176632, 0.3452432, 0.0819096]], 
+      BezierCurveBox[{{0., 0.30000000000000004`}, {0., 
+       0.30000000000000004`}, {0., 0.20123696602425728`}, {0., 0.2}, {0., 
+       0.06473390196485387}, {0.2, 0.2}, {0.2, 0.2}}]}, 
+     {AbsoluteThickness[0.5], EdgeForm[AbsoluteThickness[0.5]], FaceForm[
+      RGBColor[0.6176632, 0.3452432, 0.0819096]], 
+      BezierCurveBox[{{0., 0.30000000000000004`}, {0., 
+       0.30000000000000004`}, {0., 0.20123696602425728`}, {0., 0.2}, {0., 
+       0.06473390196485382}, {-0.2, 0.2}, {-0.2, 0.2}}]}},
+    ImageSize->{244.34925571561286`, 432.},
+    PlotRange->{{-0.6363261867594084, 0.6363261867594084}, {-1.025, 1.225}}], 
+   ",", 
+   GraphicsBox[
+    {AbsolutePointSize[4], CapForm["Round"], JoinForm["Round"], Arrowheads[
+     Medium], 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOy0ZwCDD/aba7a75H86YW+1svjVTP0P9ve+
+rWqTF7tkv4hV9rDbpg/2/9awfwgzuW6/4+LCxqD4j/aHalV3i52+bf/v5HJZ
+Tr5P9sZsO45Mv3jf/ueqK33bpn6yX1+4s6Rz/kN7dcNzZ5ad/WSvdpOlOYH1
+sT23pNV51d5P9qwcM6rfij6x15Tf11u/+qP9uTMg8ATuHtNdk+ulhJ7aa9zg
+uRh746190d4snx8xT+0blOxXME95bT9RcL7C8fVP7YMaH/g9tX5pv+Zj7cvn
+PM/sf02z6vt245n9xRkhU3aXPbM/wDpdX7vkib2QUwHf4vfP7L/n2/8pE3tk
+36gh5/q/8rn9k/e/qmZPvG9v3L5a1VDihT1Tg2mlm8Zte5OZqXNnnnlh/+zK
+wdZrTNftIeH10t7EGAQu2595uXvR8Q2v7Bc84f4e6n/aXlLlzayX1q/tjZbn
+9rLMPGh/STfk0GO31/YPuh5dFri1yT74jWzkrLuv7A9tfZS+b/l0+/cuxfM/
+cr+yf3Jzx4SCyK79/2Tqrp69+8L+lQNzvPmTBftvRmZYC8c/t2dL/14Vmb9o
+/5UH0YLLZj+1vzLtxZtLSlP3u01vmp41/7G93t7CA8fye+3bk9j4XMse2ltP
+1qjt+L/R/oa/UpZxxD37Z7wFUZP/H4K6/yY0fC/YAwBLBgYT
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOzczwAGH+w312x3yf90Yr/VyuJXM/U/2N/9
+tqpNXuzS/kWssofdNn2w/7OG/UOYyfX9Oy8ubAyK/2i/v1Z1t9jp2/v/n1wu
+y8n3yd6YbceR6Rfv7/+x6krftqmf7NcV7izpnP9wv5rhuTPLzn6yV73J0pzA
++ng/t6TVedXeT/bMHDOq34o+2a8pv6+3fvVH+7NnQOAJ3D2muybXSwk93a9x
+g+di7I239gV7s3x+xDzdX69kv4J5ymv7SYLzFY6vf7o/uPGB31Prl/ZrPta+
+fM7zbP+vaVZ93248s784I2TK7rJn+w+wTtfXLnliL+hUwLf4/bP9P/Pt/5SJ
+PbJv1JBz/V/5fP+z97+qZk+8b2/cvlrVUOLFfpYG00o3jdv2JjNT584882L/
+8ysHW68xXbeHhNfL/SbGIHDZ/szL3YuOb3i1f9ET7u+h/qftJVXezHpp/Xq/
+2fLcXpaZB+0v6YYceuz2ev+zrkeXBW5tsg95Ixs56+6r/Y+2Pkrft3y6/TuX
+4vkfuV/tX3Jzx4SCyK79/2Xqrp69+2L/LQfmePMnC/bfjMywFo5/vv9n2veq
+yPxF+688iBZcNvvp/v3TXry5pDR1v9v0pulZ8x/vD9hbeOBYfq99WxIbn2vZ
+w/12kzVqO/5vtL/hr5RlHHFv/zPegqjJ/w9B3X8TGr4X7AGXnxbr
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+       RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.9000076295109484, 0.779995422293431, 0.5400015259021896]], 
+       FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQDQMmxiDweX+j9e3SiwWn9sP427y5lVZyXt1/11B5
+6/mTn/fPBIOb+8+eAYEP+7+5Hwzd0P9yf4LNiSIh2dL9P3gqvl2+dn//LLC6
+lfYQ9Sfh/APd+utu5d3cP4nticVm30P2OSxiCgGH7u+Xkp1x5XPwTnuIuof7
+M9JA4Jm9bc3y2u3Fj/a7XXzDfOnNe3vGd9y3zS0v74e4+oM9Awr4YC9RdzOd
+/f5Nexi/4pyabLrLI/tkFcZ1ew6+h5lvDzM/x5N3tZXjA/sguUXTJ7rvsf+w
+LGBrUeFN+3knZa/5ih62nw1xvz3M/RuqhRhXXLwP5+84vbiNefJL+wfts9gc
+DGph4WMPCx97cdnPM9iv2t/MYMj4cOLz/g5I+NrDwhc9/AFkgL/Z
+         "]]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.2796891822717663, 0.8312}, {-0.15719959732115016`, 
+         0.8312}, {-0.06784358710458899, 
+         0.8183051159107019}, {-0.10808918227176624`, 
+         0.7096000000000002}, {-0.18975576539928385`, 
+         0.48901498074432864`}, {-0.1915739613064544, 
+         0.48800000000000004`}, {-0.3654891822717662, 
+         0.48800000000000004`}, {-0.5394044032370782, 
+         0.48800000000000004`}, {-0.4918354128282473, 
+         0.8312}, {-0.2796891822717663, 0.8312}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{-0.22000000000000003`, 
+         0.6800000000000003}, {-0.18700000000000006`, 
+         0.6800000000000003}, {-0.16000000000000003`, 
+         0.6530000000000001}, {-0.16000000000000003`, 
+         0.6200000000000001}, {-0.16000000000000003`, 
+         0.5870000000000001}, {-0.18700000000000006`, 
+         0.5600000000000003}, {-0.22000000000000003`, 
+         0.5600000000000003}, {-0.25300000000000006`, 
+         0.5600000000000003}, {-0.2800000000000001, 
+         0.5870000000000001}, {-0.2800000000000001, 
+         0.6200000000000001}, {-0.2800000000000001, 
+         0.6530000000000001}, {-0.25300000000000006`, 
+         0.6800000000000003}, {-0.22000000000000003`, 
+         0.6800000000000003}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{0.27373021945972514`, 0.8311999999999999}, {
+         0.15124063450910913`, 0.8311999999999999}, {0.0639690602094338, 
+         0.8190542647875968}, {0.10213021945972518`, 0.7096000000000002}, {
+         0.1787493869999932, 0.4898400446811982}, {0.18561499849441332`, 
+         0.48800000000000004`}, {0.35953021945972524`, 
+         0.48800000000000004`}, {0.533445440425037, 0.48800000000000004`}, {
+         0.48587645001620616`, 0.8311999999999999}, {0.27373021945972514`, 
+         0.8311999999999999}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{0.21404103718795892`, 0.68}, {0.18104103718795894`, 
+         0.68}, {0.15404103718795892`, 0.653}, {0.15404103718795892`, 0.62}, {
+         0.15404103718795892`, 0.587}, {0.18104103718795894`, 0.56}, {
+         0.21404103718795892`, 0.56}, {0.24704103718795895`, 0.56}, {
+         0.27404103718795897`, 0.587}, {0.27404103718795897`, 0.62}, {
+         0.27404103718795897`, 0.653}, {0.24704103718795895`, 0.68}, {
+         0.21404103718795892`, 0.68}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FaceForm[RGBColor[
+       0.20239587737599996`, 0.113129291776, 0.026840137728]], 
+       FilledCurveBox[
+        BezierCurve[{{9.771786986347106*^-19, 
+         0.06412500000000004}, {-0.09947560215024347, 
+         0.06412500000000004}, {-0.21450000000000002`, 
+         0.1841579643169986}, {-0.21450000000000002`, 
+         0.27862499999999996`}, {-0.21450000000000002`, 
+         0.3730920356830012}, {-0.20007814368243598`, 0.3858749999999999}, {
+         9.771786986347106*^-19, 0.3858749999999999}, {0.20007814368243593`, 
+         0.3858749999999999}, {0.21450000000000002`, 0.3730920356830015}, {
+         0.21450000000000002`, 0.27862499999999996`}, {0.21450000000000002`, 
+         0.1841579643169986}, {0.0994756021502434, 0.06412500000000004}, {
+         9.771786986347106*^-19, 0.06412500000000004}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}, {-0.5001429899593894, -0.9500000000000001}, \
+{-0.30000000000000004`, -0.9500000000000001}, {-0.09985701004061058, \
+-0.9500000000000001}, {-0.05000000000000002, -1.2000000000000002`}, \
+{-0.05000000000000002, -1.2000000000000002`}, {-0.05000000000000002, \
+-1.2000000000000002`}, {-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{0.04999999999999996, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}, {
+         0.09985701004061052, -0.9500000000000001}, {
+         0.30000000000000004`, -0.9500000000000001}, {
+         0.5001429899593894, -0.9500000000000001}, {
+         0.55, -1.2000000000000002`}, {0.55, -1.2000000000000002`}, {
+         0.55, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}}]]}}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+      RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      1, 0.75, 0]], 
+      BSplineCurveBox[{{-0.2, 0.05}, {0., -0.15000000000000002`}, {0.2, 0.05}},
+       SplineClosed->False,
+       SplineDegree->3]}},
+    ImageSize->{336., 460.80000000000007`},
+    PlotRange->{{-0.9, 0.8500000000000001}, {-1.2000000000000002`, 
+     1.2000000000000002`}}], ",", 
+   GraphicsBox[{
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[1], 
+      AbsoluteThickness[0.5], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], FaceForm[RGBColor[0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[
+       BezierCurve[{{0.1, 0.5000000000000001}, {0.1, 0.8950514793395994}, {
+        0.6000000000000001, 1.2000000000000002`}, {0.6000000000000001, 
+        1.2000000000000002`}, {0.6000000000000001, 1.2000000000000002`}, {
+        0.6973334721156528, 0.597750323159354}, {0.39999999999999997`, 
+        0.30000000000000004`}}]], 
+      FilledCurveBox[
+       BezierCurve[{{-0.1, 0.5000000000000001}, {-0.1, 
+        0.8959915297371999}, {-0.6000000000000001, 
+        1.2000000000000002`}, {-0.6000000000000001, 
+        1.2000000000000002`}, {-0.6000000000000001, 
+        1.2000000000000002`}, {-0.6954738071986608, 
+        0.6037175995962959}, {-0.4000000000000001, 
+        0.30000000000000004`}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1], 
+      AbsoluteThickness[0.5], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], FaceForm[RGBColor[
+      0.9000076295109484, 0.779995422293431, 0.5400015259021896]], 
+      FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2/sy33tt3/m1D5y/tnzQSBk3C+xyQVz6Kbl+D8JpEs6SOS
+T/ZHJR54NX/uJaj6h/uXgOmd9gW3t+Wujry/X8lzksr95Tft2d9x3za3vAzV
+/9ge5nIYnwMibw/jb8m9va1T9YH9LaC77kTdtIeabw8z/1K/tsuj9sf2Nc67
+z4mduAR236k9MP1w98P5GUD3fC68CedD/W/fNN++77fVNTgfLXzs1z/IC+9h
+/bC/AxK+9rDwRQ9/AGUHqxo=
+        "]]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[
+      0.6176632, 0.3452432, 0.0819096], Opacity[1], AbsoluteThickness[0.5], 
+      Dashing[{}], CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[
+      1]], FilledCurveBox[
+       BezierCurve[{{-0.21408918227176627`, 
+        0.45000000000000007`}, {-0.10273501413484251`, 
+        0.45000000000000007`}, {-0.05808918227176624, 
+        0.3993781469164114}, {-0.05808918227176624, 
+        0.29400000000000015`}, {-0.05808918227176624, 
+        0.1886218530835889}, {-0.13398443593966458`, 
+        0.13800000000000007`}, {-0.2920891822717662, 
+        0.13800000000000007`}, {-0.450193928603868, 
+        0.13800000000000007`}, {-0.4069493918685672, 
+        0.45000000000000007`}, {-0.21408918227176627`, 
+        0.45000000000000007`}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+      AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], 
+      FilledCurveBox[
+       BezierCurve[{{-0.162, 0.3900000000000001}, {-0.13340000000000005`, 
+        0.3900000000000001}, {-0.11000000000000001`, 
+        0.36660000000000004`}, {-0.11000000000000001`, 
+        0.3380000000000001}, {-0.11000000000000001`, 
+        0.3094}, {-0.13340000000000005`, 0.28600000000000014`}, {-0.162, 
+        0.28600000000000014`}, {-0.19060000000000002`, 
+        0.28600000000000014`}, {-0.21400000000000005`, 
+        0.3094}, {-0.21400000000000005`, 
+        0.3380000000000001}, {-0.21400000000000005`, 
+        0.36660000000000004`}, {-0.19060000000000002`, 
+        0.3900000000000001}, {-0.162, 0.3900000000000001}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[
+      0.6176632, 0.3452432, 0.0819096], Opacity[1], AbsoluteThickness[0.5], 
+      Dashing[{}], CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[
+      1]], FilledCurveBox[
+       BezierCurve[{{0.20813021945972515`, 0.44999999999999996`}, {
+        0.09677605132280145, 0.44999999999999996`}, {0.05213021945972518, 
+        0.3993781469164114}, {0.05213021945972518, 0.29400000000000015`}, {
+        0.05213021945972518, 0.18862185308358878`}, {0.12802547312762347`, 
+        0.13800000000000007`}, {0.2861302194597252, 0.13800000000000007`}, {
+        0.4442349657918268, 0.13800000000000007`}, {0.40099042905652604`, 
+        0.44999999999999996`}, {0.20813021945972515`, 
+        0.44999999999999996`}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+      AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], 
+      FilledCurveBox[
+       BezierCurve[{{0.15604103718795892`, 0.39}, {0.12744103718795893`, 
+        0.39}, {0.1040410371879589, 0.36660000000000004`}, {
+        0.1040410371879589, 0.33799999999999997`}, {0.1040410371879589, 
+        0.3094}, {0.12744103718795893`, 0.28600000000000014`}, {
+        0.15604103718795892`, 0.28600000000000014`}, {0.1846410371879589, 
+        0.28600000000000014`}, {0.20804103718795894`, 0.3094}, {
+        0.20804103718795894`, 0.33799999999999997`}, {0.20804103718795894`, 
+        0.36660000000000004`}, {0.1846410371879589, 0.39}, {
+        0.15604103718795892`, 0.39}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+      AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], FaceForm[RGBColor[
+      0.395304448, 0.22095564799999998`, 0.052422144000000004`]], 
+      FilledCurveBox[
+       BezierCurve[{{
+        0., -2.7755575615628914`*^-17}, {-0.0463755720980156, \
+-2.7755575615628914`*^-17}, {-0.1, 0.0559594239240086}, {-0.1, 
+        0.09999999999999992}, {-0.1, 
+        0.14404057607599124`}, {-0.09327652386127552, 0.14999999999999997`}, {
+        0., 0.14999999999999997`}, {0.0932765238612755, 
+        0.14999999999999997`}, {0.1, 0.14404057607599136`}, {0.1, 
+        0.09999999999999992}, {0.1, 0.0559594239240086}, {
+        0.04637557209801557, -2.7755575615628914`*^-17}, {
+        0., -2.7755575615628914`*^-17}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[1], 
+      AbsoluteThickness[0.5], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], FaceForm[RGBColor[0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[
+       BezierCurve[{{-0.45, -1.}, {-0.45, -1.}, {-0.45014298995938945`, \
+-0.7000000000000001}, {-0.25000000000000006`, -0.7000000000000001}, \
+{-0.049857010040610564`, -0.7000000000000001}, {-0.05, -1.}, {-0.05, -1.}, \
+{-0.05, -1.}, {-0.45, -1.}, {-0.45, -1.}}]], 
+      FilledCurveBox[
+       BezierCurve[{{0.049999999999999975`, -1.}, {
+        0.049999999999999975`, -1.}, {
+        0.049857010040610536`, -0.7000000000000001}, {
+        0.25000000000000006`, -0.7000000000000001}, {
+        0.45014298995938945`, -0.7000000000000001}, {0.45, -1.}, {
+        0.45, -1.}, {0.45, -1.}, {0.049999999999999975`, -1.}, {
+        0.049999999999999975`, -1.}}]]}, 
+     {GrayLevel[0], AbsoluteThickness[0.5], Opacity[1], Dashing[{}], CapForm[
+      "Round"], JoinForm["Round"], EdgeForm[{GrayLevel[0], Opacity[1], 
+      AbsoluteThickness[0.5], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], 
+      BezierCurveBox[{{0., 2.7755575615628914`*^-17}, {0., 
+       2.7755575615628914`*^-17}, {0., -0.09876303397574274}, {0., -0.1}, {
+       0., -0.23526609803514617`}, {0.2, -0.1}, {0.2, -0.1}}], 
+      BezierCurveBox[{{0., 2.7755575615628914`*^-17}, {0., 
+       2.7755575615628914`*^-17}, {0., -0.09876303397574274}, {0., -0.1}, {
+       0., -0.23526609803514617`}, {-0.2, -0.1}, {-0.2, -0.1}}]}},
+    ImageSize->{244.34925571561286`, 432.},
+    PlotRange->{{-0.6363261867594084, 0.6363261867594084}, {-1.025, 1.225}}], 
+   ",", 
+   GraphicsBox[
+    {AbsolutePointSize[4], CapForm["Round"], JoinForm["Round"], Arrowheads[
+     Medium], {
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], {}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{0.1, 0.8}, {0.30705438261641305`, 1.173789829072348}, {
+          0.6000000000000001, 1.2000000000000002`}, {0.6000000000000001, 
+          1.2000000000000002`}, {0.6000000000000001, 1.2000000000000002`}, {
+          0.7423218191009143, 0.5}, {0.39999999999999997`, 0.5}}]]}}, 
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], {}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{-0.1, 0.8}, {-0.30705438261641316`, 
+          1.1737898290723483`}, {-0.6000000000000001, 
+          1.2000000000000002`}, {-0.6000000000000001, 
+          1.2000000000000002`}, {-0.6000000000000001, 
+          1.2000000000000002`}, {-0.7423218191009142, 
+          0.5}, {-0.4000000000000001, 0.5}}]]}}}, {
+      {FaceForm[RGBColor[1, 0.749996, 0]]}, 
+      {FaceForm[RGBColor[1, 0.749996, 0]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+        RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2fNRMETu6/dX1S3OyK03A+zAYYv+Ali/DGM9vsIfyH+w+o
+pqR5Hj8J50PMfwzn79KbkrKc/YU9+zvu2+aWl/efPQMCb+xh5sL4HBB5exgf
+qt9+J1Q/jI9mvn2GTI+G9E2Y/Sft81Dcd9Iezf32MP9B/W/fNN++77fVNTgf
+LXzs1z/IC+9h/bC/AxK+9rDwRQ9/AErUseU=
+          "]]]}}}, {
+      {FaceForm[RGBColor[0.960784, 0.654902, 0.00392157]]}, 
+      {FaceForm[RGBColor[0.960784, 0.654902, 0.00392157]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+        RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2fNRMETu6/dX1S3OyK03A+zAYYv+Ali/DGM9vsIfyH+w+o
+pqR5Hj8J50PMfwzn79KbkrKc/YU9+zvu2+aWl/efPQMCb+xh5sL4HBB5exgf
+qt9+J1Q/jI9mvn2GTI+G9E2Y/Sft81Dcd9Iezf32MP9B/W/fNN++77fVNTgf
+LXzs1z/IC+9h/bC/AxK+9rDwRQ9/AErUseU=
+          "]]]}}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.21408918227176627`, 0.75}, {-0.10273501413484251`, 
+         0.75}, {-0.05808918227176624, 
+         0.6993781469164113}, {-0.05808918227176624, 
+         0.5940000000000001}, {-0.05808918227176624, 
+         0.48862185308358885`}, {-0.13398443593966458`, 
+         0.43800000000000006`}, {-0.2920891822717662, 
+         0.43800000000000006`}, {-0.450193928603868, 
+         0.43800000000000006`}, {-0.4069493918685672, 
+         0.75}, {-0.21408918227176627`, 0.75}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{-0.162, 0.6900000000000001}, {-0.13340000000000005`, 
+         0.6900000000000001}, {-0.11000000000000001`, 
+         0.6666}, {-0.11000000000000001`, 0.638}, {-0.11000000000000001`, 
+         0.6093999999999999}, {-0.13340000000000005`, 
+         0.5860000000000001}, {-0.162, 
+         0.5860000000000001}, {-0.19060000000000002`, 
+         0.5860000000000001}, {-0.21400000000000005`, 
+         0.6093999999999999}, {-0.21400000000000005`, 
+         0.638}, {-0.21400000000000005`, 0.6666}, {-0.19060000000000002`, 
+         0.6900000000000001}, {-0.162, 0.6900000000000001}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{0.20813021945972515`, 0.7499999999999999}, {
+         0.09677605132280145, 0.7499999999999999}, {0.05213021945972518, 
+         0.6993781469164113}, {0.05213021945972518, 0.5940000000000001}, {
+         0.05213021945972518, 0.48862185308358874`}, {0.12802547312762347`, 
+         0.43800000000000006`}, {0.2861302194597252, 0.43800000000000006`}, {
+         0.4442349657918268, 0.43800000000000006`}, {0.40099042905652604`, 
+         0.7499999999999999}, {0.20813021945972515`, 
+         0.7499999999999999}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{0.15604103718795892`, 0.69}, {0.12744103718795893`, 
+         0.69}, {0.1040410371879589, 0.6666}, {0.1040410371879589, 
+         0.6379999999999999}, {0.1040410371879589, 0.6093999999999999}, {
+         0.12744103718795893`, 0.5860000000000001}, {0.15604103718795892`, 
+         0.5860000000000001}, {0.1846410371879589, 0.5860000000000001}, {
+         0.20804103718795894`, 0.6093999999999999}, {0.20804103718795894`, 
+         0.6379999999999999}, {0.20804103718795894`, 0.6666}, {
+         0.1846410371879589, 0.69}, {0.15604103718795892`, 0.69}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FaceForm[RGBColor[
+       0.395304448, 0.22095564799999998`, 0.052422144000000004`]], 
+       FilledCurveBox[
+        BezierCurve[{{0., 0.3}, {-0.0463755720980156, 0.3}, {-0.1, 
+         0.35595942392400864`}, {-0.1, 0.39999999999999997`}, {-0.1, 
+         0.4440405760759913}, {-0.09327652386127552, 0.45}, {0., 0.45}, {
+         0.0932765238612755, 0.45}, {0.1, 0.4440405760759914}, {0.1, 
+         0.39999999999999997`}, {0.1, 0.35595942392400864`}, {
+         0.04637557209801557, 0.3}, {0., 0.3}}]]}}, {
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], {}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{-0.45, -1.}, {-0.45, -1.}, {-0.45014298995938945`, \
+-0.7000000000000001}, {-0.25000000000000006`, -0.7000000000000001}, \
+{-0.049857010040610564`, -0.7000000000000001}, {-0.05, -1.}, {-0.05, -1.}, \
+{-0.05, -1.}, {-0.45, -1.}, {-0.45, -1.}}]]}}, 
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], {}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{0.049999999999999975`, -1.}, {
+          0.049999999999999975`, -1.}, {
+          0.049857010040610536`, -0.7000000000000001}, {
+          0.25000000000000006`, -0.7000000000000001}, {
+          0.45014298995938945`, -0.7000000000000001}, {0.45, -1.}, {
+          0.45, -1.}, {0.45, -1.}, {0.049999999999999975`, -1.}, {
+          0.049999999999999975`, -1.}}]]}}}, 
+     {AbsoluteThickness[0.5], EdgeForm[AbsoluteThickness[0.5]], FaceForm[
+      RGBColor[0.6176632, 0.3452432, 0.0819096]], 
+      BezierCurveBox[{{0., 0.30000000000000004`}, {0., 
+       0.30000000000000004`}, {0., 0.20123696602425728`}, {0., 0.2}, {0., 
+       0.06473390196485387}, {0.2, 0.2}, {0.2, 0.2}}]}, 
+     {AbsoluteThickness[0.5], EdgeForm[AbsoluteThickness[0.5]], FaceForm[
+      RGBColor[0.6176632, 0.3452432, 0.0819096]], 
+      BezierCurveBox[{{0., 0.30000000000000004`}, {0., 
+       0.30000000000000004`}, {0., 0.20123696602425728`}, {0., 0.2}, {0., 
+       0.06473390196485382}, {-0.2, 0.2}, {-0.2, 0.2}}]}},
+    ImageSize->{244.34925571561286`, 432.},
+    PlotRange->{{-0.6363261867594084, 0.6363261867594084}, {-1.025, 1.225}}], 
+   ",", 
+   GraphicsBox[
+    {AbsolutePointSize[4], CapForm["Round"], JoinForm["Round"], Arrowheads[
+     Medium], {
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOy0ZwCDD/aba7a75H86YW+1svjVTP0P9ve+
+rWqTF7tkv4hV9rDbpg/2/9awfwgzuW6/4+LCxqD4j/aHalV3i52+bf/v5HJZ
+Tr5P9sZsO45Mv3jf/ueqK33bpn6yX1+4s6Rz/kN7dcNzZ5ad/WSvdpOlOYH1
+sT23pNV51d5P9qwcM6rfij6x15Tf11u/+qP9uTMg8ATuHtNdk+ulhJ7aa9zg
+uRh746190d4snx8xT+0blOxXME95bT9RcL7C8fVP7YMaH/g9tX5pv+Zj7cvn
+PM/sf02z6vt245n9xRkhU3aXPbM/wDpdX7vkib2QUwHf4vfP7L/n2/8pE3tk
+36gh5/q/8rn9k/e/qmZPvG9v3L5a1VDihT1Tg2mlm8Zte5OZqXNnnnlh/+zK
+wdZrTNftIeH10t7EGAQu2595uXvR8Q2v7Bc84f4e6n/aXlLlzayX1q/tjZbn
+9rLMPGh/STfk0GO31/YPuh5dFri1yT74jWzkrLuv7A9tfZS+b/l0+/cuxfM/
+cr+yf3Jzx4SCyK79/2Tqrp69+8L+lQNzvPmTBftvRmZYC8c/t2dL/14Vmb9o
+/5UH0YLLZj+1vzLtxZtLSlP3u01vmp41/7G93t7CA8fye+3bk9j4XMse2ltP
+1qjt+L/R/oa/UpZxxD37Z7wFUZP/H4K6/yY0fC/YAwBLBgYT
+          "], SplineClosed -> 
+          False, SplineDegree -> 3]]}}, 
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOzczwAGH+w312x3yf90Yr/VyuJXM/U/2N/9
+tqpNXuzS/kWssofdNn2w/7OG/UOYyfX9Oy8ubAyK/2i/v1Z1t9jp2/v/n1wu
+y8n3yd6YbceR6Rfv7/+x6krftqmf7NcV7izpnP9wv5rhuTPLzn6yV73J0pzA
++ng/t6TVedXeT/bMHDOq34o+2a8pv6+3fvVH+7NnQOAJ3D2muybXSwk93a9x
+g+di7I239gV7s3x+xDzdX69kv4J5ymv7SYLzFY6vf7o/uPGB31Prl/ZrPta+
+fM7zbP+vaVZ93248s784I2TK7rJn+w+wTtfXLnliL+hUwLf4/bP9P/Pt/5SJ
+PbJv1JBz/V/5fP+z97+qZk+8b2/cvlrVUOLFfpYG00o3jdv2JjNT584882L/
+8ysHW68xXbeHhNfL/SbGIHDZ/szL3YuOb3i1f9ET7u+h/qftJVXezHpp/Xq/
+2fLcXpaZB+0v6YYceuz2ev+zrkeXBW5tsg95Ixs56+6r/Y+2Pkrft3y6/TuX
+4vkfuV/tX3Jzx4SCyK79/2Xqrp69+2L/LQfmePMnC/bfjMywFo5/vv9n2veq
+yPxF+688iBZcNvvp/v3TXry5pDR1v9v0pulZ8x/vD9hbeOBYfq99WxIbn2vZ
+w/12kzVqO/5vtL/hr5RlHHFv/zPegqjJ/w9B3X8TGr4X7AGXnxbr
+          "], 
+          SplineClosed -> False, SplineDegree -> 3]]}}}, {
+      {FaceForm[RGBColor[0.960784, 0.654902, 0.00392157]]}, 
+      {FaceForm[RGBColor[0.960784, 0.654902, 0.00392157]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+        RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQDQMmxiDweX+j9e3SiwWn9sP427y5lVZyXt1/11B5
+6/mTn/fPBIOb+8+eAYEP+7+5Hwzd0P9yf4LNiSIh2dL9P3gqvl2+dn//LLC6
+lfYQ9Sfh/APd+utu5d3cP4nticVm30P2OSxiCgGH7u+Xkp1x5XPwTnuIuof7
+M9JA4Jm9bc3y2u3Fj/a7XXzDfOnNe3vGd9y3zS0v74e4+oM9Awr4YC9RdzOd
+/f5Nexi/4pyabLrLI/tkFcZ1ew6+h5lvDzM/x5N3tZXjA/sguUXTJ7rvsf+w
+LGBrUeFN+3knZa/5ih62nw1xvz3M/RuqhRhXXLwP5+84vbiNefJL+wfts9gc
+DGph4WMPCx97cdnPM9iv2t/MYMj4cOLz/g5I+NrDwhc9/AFkgL/Z
+          "]]]}}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.2796891822717663, 0.8312}, {-0.15719959732115016`, 
+         0.8312}, {-0.06784358710458899, 
+         0.8183051159107019}, {-0.10808918227176624`, 
+         0.7096000000000002}, {-0.18975576539928385`, 
+         0.48901498074432864`}, {-0.1915739613064544, 
+         0.48800000000000004`}, {-0.3654891822717662, 
+         0.48800000000000004`}, {-0.5394044032370782, 
+         0.48800000000000004`}, {-0.4918354128282473, 
+         0.8312}, {-0.2796891822717663, 0.8312}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{-0.22000000000000003`, 
+         0.6800000000000003}, {-0.18700000000000006`, 
+         0.6800000000000003}, {-0.16000000000000003`, 
+         0.6530000000000001}, {-0.16000000000000003`, 
+         0.6200000000000001}, {-0.16000000000000003`, 
+         0.5870000000000001}, {-0.18700000000000006`, 
+         0.5600000000000003}, {-0.22000000000000003`, 
+         0.5600000000000003}, {-0.25300000000000006`, 
+         0.5600000000000003}, {-0.2800000000000001, 
+         0.5870000000000001}, {-0.2800000000000001, 
+         0.6200000000000001}, {-0.2800000000000001, 
+         0.6530000000000001}, {-0.25300000000000006`, 
+         0.6800000000000003}, {-0.22000000000000003`, 
+         0.6800000000000003}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{0.27373021945972514`, 0.8311999999999999}, {
+         0.15124063450910913`, 0.8311999999999999}, {0.0639690602094338, 
+         0.8190542647875968}, {0.10213021945972518`, 0.7096000000000002}, {
+         0.1787493869999932, 0.4898400446811982}, {0.18561499849441332`, 
+         0.48800000000000004`}, {0.35953021945972524`, 
+         0.48800000000000004`}, {0.533445440425037, 0.48800000000000004`}, {
+         0.48587645001620616`, 0.8311999999999999}, {0.27373021945972514`, 
+         0.8311999999999999}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{0.21404103718795892`, 0.68}, {0.18104103718795894`, 
+         0.68}, {0.15404103718795892`, 0.653}, {0.15404103718795892`, 0.62}, {
+         0.15404103718795892`, 0.587}, {0.18104103718795894`, 0.56}, {
+         0.21404103718795892`, 0.56}, {0.24704103718795895`, 0.56}, {
+         0.27404103718795897`, 0.587}, {0.27404103718795897`, 0.62}, {
+         0.27404103718795897`, 0.653}, {0.24704103718795895`, 0.68}, {
+         0.21404103718795892`, 0.68}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FaceForm[RGBColor[
+       0.20239587737599996`, 0.113129291776, 0.026840137728]], 
+       FilledCurveBox[
+        BezierCurve[{{9.771786986347106*^-19, 
+         0.06412500000000004}, {-0.09947560215024347, 
+         0.06412500000000004}, {-0.21450000000000002`, 
+         0.1841579643169986}, {-0.21450000000000002`, 
+         0.27862499999999996`}, {-0.21450000000000002`, 
+         0.3730920356830012}, {-0.20007814368243598`, 0.3858749999999999}, {
+         9.771786986347106*^-19, 0.3858749999999999}, {0.20007814368243593`, 
+         0.3858749999999999}, {0.21450000000000002`, 0.3730920356830015}, {
+         0.21450000000000002`, 0.27862499999999996`}, {0.21450000000000002`, 
+         0.1841579643169986}, {0.0994756021502434, 0.06412500000000004}, {
+         9.771786986347106*^-19, 0.06412500000000004}}]]}}, {
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], {}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}, {-0.5001429899593894, -0.9500000000000001}, \
+{-0.30000000000000004`, -0.9500000000000001}, {-0.09985701004061058, \
+-0.9500000000000001}, {-0.05000000000000002, -1.2000000000000002`}, \
+{-0.05000000000000002, -1.2000000000000002`}, {-0.05000000000000002, \
+-1.2000000000000002`}, {-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}}]]}}, 
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], {}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{0.04999999999999996, -1.2000000000000002`}, {
+          0.04999999999999996, -1.2000000000000002`}, {
+          0.09985701004061052, -0.9500000000000001}, {
+          0.30000000000000004`, -0.9500000000000001}, {
+          0.5001429899593894, -0.9500000000000001}, {
+          0.55, -1.2000000000000002`}, {0.55, -1.2000000000000002`}, {
+          0.55, -1.2000000000000002`}, {
+          0.04999999999999996, -1.2000000000000002`}, {
+          0.04999999999999996, -1.2000000000000002`}}]]}}}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+      RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      1, 0.75, 0]], 
+      BSplineCurveBox[{{-0.2, 0.05}, {0., -0.15000000000000002`}, {0.2, 0.05}},
+       SplineClosed->False,
+       SplineDegree->3]}},
+    ImageSize->{336., 460.80000000000007`},
+    PlotRange->{{-0.9, 0.8500000000000001}, {-1.2000000000000002`, 
+     1.2000000000000002`}}], ",", 
+   RowBox[{
+    GraphicsBox[{
+      {EdgeForm[{RGBColor[0, 0, 0], AbsoluteThickness[0.5], Dashing[{}], 
+       CapForm["Round"], JoinForm["Round"]}], FaceForm[RGBColor[
+       0.627451, 0.435294, 0.211765]], 
+       FilledCurveBox[
+        BezierCurve[{{0.1, 0.5000000000000001}, {0.1, 0.8950514793395994}, {
+         0.6000000000000001, 1.2000000000000002`}, {0.6000000000000001, 
+         1.2000000000000002`}, {0.6000000000000001, 1.2000000000000002`}, {
+         0.6973334721156528, 0.597750323159354}, {0.39999999999999997`, 
+         0.30000000000000004`}}]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.1, 0.5000000000000001}, {-0.1, 
+         0.8959915297371999}, {-0.6000000000000001, 
+         1.2000000000000002`}, {-0.6000000000000001, 
+         1.2000000000000002`}, {-0.6000000000000001, 
+         1.2000000000000002`}, {-0.6954738071986608, 
+         0.6037175995962959}, {-0.4000000000000001, 0.30000000000000004`}}]]}, 
+      {EdgeForm[{RGBColor[0., 0., 0.], AbsoluteThickness[0.5], Dashing[{}], 
+       CapForm["Round"], JoinForm["Round"]}], FaceForm[RGBColor[
+       0.960784, 0.654902, 0.00392157]], 
+       FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2/sy33tt3/m1D5y/tnzQSBk3C+xyQVz6Kbl+D8JpEs6SOS
+T/ZHJR54NX/uJaj6h/uXgOmd9gW3t+Wujry/X8lzksr95Tft2d9x3za3vAzV
+/9ge5nIYnwMibw/jb8m9va1T9YH9LaC77kTdtIeabw8z/1K/tsuj9sf2Nc67
+z4mduAR236k9MP1w98P5GUD3fC68CedD/W/fNN++77fVNTgfLXzs1z/IC+9h
+/bC/AxK+9rDwRQ9/AGUHqxo=
+         "]]]}, 
+      {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], Opacity[1], AbsoluteThickness[0.5], 
+       Dashing[{}], CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[
+       1]], FilledCurveBox[
+        BezierCurve[{{-0.21408918227176627`, 
+         0.45000000000000007`}, {-0.10273501413484251`, 
+         0.45000000000000007`}, {-0.05808918227176624, 
+         0.3993781469164114}, {-0.05808918227176624, 
+         0.29400000000000015`}, {-0.05808918227176624, 
+         0.1886218530835889}, {-0.13398443593966458`, 
+         0.13800000000000007`}, {-0.2920891822717662, 
+         0.13800000000000007`}, {-0.450193928603868, 
+         0.13800000000000007`}, {-0.4069493918685672, 
+         0.45000000000000007`}, {-0.21408918227176627`, 
+         0.45000000000000007`}}]]}, 
+      {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+       AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+       "Round"]}], 
+       FilledCurveBox[
+        BezierCurve[{{-0.162, 0.3900000000000001}, {-0.13340000000000005`, 
+         0.3900000000000001}, {-0.11000000000000001`, 
+         0.36660000000000004`}, {-0.11000000000000001`, 
+         0.3380000000000001}, {-0.11000000000000001`, 
+         0.3094}, {-0.13340000000000005`, 0.28600000000000014`}, {-0.162, 
+         0.28600000000000014`}, {-0.19060000000000002`, 
+         0.28600000000000014`}, {-0.21400000000000005`, 
+         0.3094}, {-0.21400000000000005`, 
+         0.3380000000000001}, {-0.21400000000000005`, 
+         0.36660000000000004`}, {-0.19060000000000002`, 
+         0.3900000000000001}, {-0.162, 0.3900000000000001}}]]}, 
+      {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], Opacity[1], AbsoluteThickness[0.5], 
+       Dashing[{}], CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[
+       1]], FilledCurveBox[
+        BezierCurve[{{0.20813021945972515`, 0.44999999999999996`}, {
+         0.09677605132280145, 0.44999999999999996`}, {0.05213021945972518, 
+         0.3993781469164114}, {0.05213021945972518, 0.29400000000000015`}, {
+         0.05213021945972518, 0.18862185308358878`}, {0.12802547312762347`, 
+         0.13800000000000007`}, {0.2861302194597252, 0.13800000000000007`}, {
+         0.4442349657918268, 0.13800000000000007`}, {0.40099042905652604`, 
+         0.44999999999999996`}, {0.20813021945972515`, 
+         0.44999999999999996`}}]]}, 
+      {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+       AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+       "Round"]}], 
+       FilledCurveBox[
+        BezierCurve[{{0.15604103718795892`, 0.39}, {0.12744103718795893`, 
+         0.39}, {0.1040410371879589, 0.36660000000000004`}, {
+         0.1040410371879589, 0.33799999999999997`}, {0.1040410371879589, 
+         0.3094}, {0.12744103718795893`, 0.28600000000000014`}, {
+         0.15604103718795892`, 0.28600000000000014`}, {0.1846410371879589, 
+         0.28600000000000014`}, {0.20804103718795894`, 0.3094}, {
+         0.20804103718795894`, 0.33799999999999997`}, {0.20804103718795894`, 
+         0.36660000000000004`}, {0.1846410371879589, 0.39}, {
+         0.15604103718795892`, 0.39}}]]}, 
+      {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+       AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+       "Round"]}], FaceForm[RGBColor[
+       0.395304448, 0.22095564799999998`, 0.052422144000000004`]], 
+       FilledCurveBox[
+        BezierCurve[{{
+         0., -2.7755575615628914`*^-17}, {-0.0463755720980156, \
+-2.7755575615628914`*^-17}, {-0.1, 0.0559594239240086}, {-0.1, 
+         0.09999999999999992}, {-0.1, 
+         0.14404057607599124`}, {-0.09327652386127552, 
+         0.14999999999999997`}, {0., 0.14999999999999997`}, {
+         0.0932765238612755, 0.14999999999999997`}, {0.1, 
+         0.14404057607599136`}, {0.1, 0.09999999999999992}, {0.1, 
+         0.0559594239240086}, {
+         0.04637557209801557, -2.7755575615628914`*^-17}, {
+         0., -2.7755575615628914`*^-17}}]]}, 
+      {EdgeForm[{RGBColor[0, 0, 0], AbsoluteThickness[0.5], Dashing[{}], 
+       CapForm["Round"], JoinForm["Round"]}], FaceForm[RGBColor[
+       0.627451, 0.435294, 0.211765]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.45, -1.}, {-0.45, -1.}, {-0.45014298995938945`, \
+-0.7000000000000001}, {-0.25000000000000006`, -0.7000000000000001}, \
+{-0.049857010040610564`, -0.7000000000000001}, {-0.05, -1.}, {-0.05, -1.}, \
+{-0.05, -1.}, {-0.45, -1.}, {-0.45, -1.}}]], 
+       FilledCurveBox[
+        BezierCurve[{{0.049999999999999975`, -1.}, {
+         0.049999999999999975`, -1.}, {
+         0.049857010040610536`, -0.7000000000000001}, {
+         0.25000000000000006`, -0.7000000000000001}, {
+         0.45014298995938945`, -0.7000000000000001}, {0.45, -1.}, {
+         0.45, -1.}, {0.45, -1.}, {0.049999999999999975`, -1.}, {
+         0.049999999999999975`, -1.}}]]}, 
+      {GrayLevel[0], AbsoluteThickness[0.5], Opacity[1], Dashing[{}], CapForm[
+       "Round"], JoinForm["Round"], EdgeForm[{GrayLevel[0], Opacity[1], 
+       AbsoluteThickness[0.5], Dashing[{}], CapForm["Round"], JoinForm[
+       "Round"]}], 
+       BezierCurveBox[{{0., 2.7755575615628914`*^-17}, {0., 
+        2.7755575615628914`*^-17}, {0., -0.09876303397574274}, {0., -0.1}, {
+        0., -0.23526609803514617`}, {0.2, -0.1}, {0.2, -0.1}}], 
+       BezierCurveBox[{{0., 2.7755575615628914`*^-17}, {0., 
+        2.7755575615628914`*^-17}, {0., -0.09876303397574274}, {0., -0.1}, {
+        0., -0.23526609803514617`}, {-0.2, -0.1}, {-0.2, -0.1}}]}},
+     ImageSize->{244.34925571561286`, 432.},
+     PlotRange->{{-0.6363261867594084, 0.6363261867594084}, {-1.025, 1.225}}], 
+    GraphicsBox[
+     {AbsolutePointSize[4], CapForm["Round"], JoinForm["Round"], Arrowheads[
+      Medium], {
+       {FaceForm[GrayLevel[0.250004]], {}, 
+        {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+         RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+         FilledCurveBox[
+          BezierCurve[{{0.1, 0.8}, {0.30705438261641305`, 
+           1.173789829072348}, {0.6000000000000001, 1.2000000000000002`}, {
+           0.6000000000000001, 1.2000000000000002`}, {0.6000000000000001, 
+           1.2000000000000002`}, {0.7423218191009143, 0.5}, {
+           0.39999999999999997`, 0.5}}]]}}, 
+       {FaceForm[GrayLevel[0.250004]], {}, 
+        {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+         RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+         FilledCurveBox[
+          BezierCurve[{{-0.1, 0.8}, {-0.30705438261641316`, 
+           1.1737898290723483`}, {-0.6000000000000001, 
+           1.2000000000000002`}, {-0.6000000000000001, 
+           1.2000000000000002`}, {-0.6000000000000001, 
+           1.2000000000000002`}, {-0.7423218191009142, 
+           0.5}, {-0.4000000000000001, 0.5}}]]}}}, {
+       {FaceForm[RGBColor[1, 0.749996, 0]]}, 
+       {FaceForm[RGBColor[1, 0.749996, 0]], 
+        {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+         RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], 
+         FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2fNRMETu6/dX1S3OyK03A+zAYYv+Ali/DGM9vsIfyH+w+o
+pqR5Hj8J50PMfwzn79KbkrKc/YU9+zvu2+aWl/efPQMCb+xh5sL4HBB5exgf
+qt9+J1Q/jI9mvn2GTI+G9E2Y/Sft81Dcd9Iezf32MP9B/W/fNN++77fVNTgf
+LXzs1z/IC+9h/bC/AxK+9rDwRQ9/AErUseU=
+           "]]]}}}, {
+       {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]]}, 
+       {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], 
+        {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+         RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], 
+         FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2fNRMETu6/dX1S3OyK03A+zAYYv+Ali/DGM9vsIfyH+w+o
+pqR5Hj8J50PMfwzn79KbkrKc/YU9+zvu2+aWl/efPQMCb+xh5sL4HBB5exgf
+qt9+J1Q/jI9mvn2GTI+G9E2Y/Sft81Dcd9Iezf32MP9B/W/fNN++77fVNTgf
+LXzs1z/IC+9h/bC/AxK+9rDwRQ9/AErUseU=
+           "]]]}}}, {{}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+        0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+        0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+        GrayLevel[1]], 
+        FilledCurveBox[
+         BezierCurve[{{-0.21408918227176627`, 0.75}, {-0.10273501413484251`, 
+          0.75}, {-0.05808918227176624, 
+          0.6993781469164113}, {-0.05808918227176624, 
+          0.5940000000000001}, {-0.05808918227176624, 
+          0.48862185308358885`}, {-0.13398443593966458`, 
+          0.43800000000000006`}, {-0.2920891822717662, 
+          0.43800000000000006`}, {-0.450193928603868, 
+          0.43800000000000006`}, {-0.4069493918685672, 
+          0.75}, {-0.21408918227176627`, 0.75}}]]}}, {{}, 
+       {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+        EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+        FilledCurveBox[
+         BezierCurve[{{-0.162, 0.6900000000000001}, {-0.13340000000000005`, 
+          0.6900000000000001}, {-0.11000000000000001`, 
+          0.6666}, {-0.11000000000000001`, 0.638}, {-0.11000000000000001`, 
+          0.6093999999999999}, {-0.13340000000000005`, 
+          0.5860000000000001}, {-0.162, 
+          0.5860000000000001}, {-0.19060000000000002`, 
+          0.5860000000000001}, {-0.21400000000000005`, 
+          0.6093999999999999}, {-0.21400000000000005`, 
+          0.638}, {-0.21400000000000005`, 0.6666}, {-0.19060000000000002`, 
+          0.6900000000000001}, {-0.162, 0.6900000000000001}}]]}}, {{}, 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+        0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+        0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+        GrayLevel[1]], 
+        FilledCurveBox[
+         BezierCurve[{{0.20813021945972515`, 0.7499999999999999}, {
+          0.09677605132280145, 0.7499999999999999}, {0.05213021945972518, 
+          0.6993781469164113}, {0.05213021945972518, 0.5940000000000001}, {
+          0.05213021945972518, 0.48862185308358874`}, {0.12802547312762347`, 
+          0.43800000000000006`}, {0.2861302194597252, 0.43800000000000006`}, {
+          0.4442349657918268, 0.43800000000000006`}, {0.40099042905652604`, 
+          0.7499999999999999}, {0.20813021945972515`, 
+          0.7499999999999999}}]]}}, {{}, 
+       {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+        EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+        FilledCurveBox[
+         BezierCurve[{{0.15604103718795892`, 0.69}, {0.12744103718795893`, 
+          0.69}, {0.1040410371879589, 0.6666}, {0.1040410371879589, 
+          0.6379999999999999}, {0.1040410371879589, 0.6093999999999999}, {
+          0.12744103718795893`, 0.5860000000000001}, {0.15604103718795892`, 
+          0.5860000000000001}, {0.1846410371879589, 0.5860000000000001}, {
+          0.20804103718795894`, 0.6093999999999999}, {0.20804103718795894`, 
+          0.6379999999999999}, {0.20804103718795894`, 0.6666}, {
+          0.1846410371879589, 0.69}, {0.15604103718795892`, 0.69}}]]}}, {{}, 
+       {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+        EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+        FaceForm[RGBColor[
+        0.395304448, 0.22095564799999998`, 0.052422144000000004`]], 
+        FilledCurveBox[
+         BezierCurve[{{0., 0.3}, {-0.0463755720980156, 0.3}, {-0.1, 
+          0.35595942392400864`}, {-0.1, 0.39999999999999997`}, {-0.1, 
+          0.4440405760759913}, {-0.09327652386127552, 0.45}, {0., 0.45}, {
+          0.0932765238612755, 0.45}, {0.1, 0.4440405760759914}, {0.1, 
+          0.39999999999999997`}, {0.1, 0.35595942392400864`}, {
+          0.04637557209801557, 0.3}, {0., 0.3}}]]}}, {
+       {FaceForm[GrayLevel[0.250004]], {}, 
+        {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+         RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+         FilledCurveBox[
+          BezierCurve[{{-0.45, -1.}, {-0.45, -1.}, {-0.45014298995938945`, \
+-0.7000000000000001}, {-0.25000000000000006`, -0.7000000000000001}, \
+{-0.049857010040610564`, -0.7000000000000001}, {-0.05, -1.}, {-0.05, -1.}, \
+{-0.05, -1.}, {-0.45, -1.}, {-0.45, -1.}}]]}}, 
+       {FaceForm[GrayLevel[0.250004]], {}, 
+        {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+         RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+         FilledCurveBox[
+          BezierCurve[{{0.049999999999999975`, -1.}, {
+           0.049999999999999975`, -1.}, {
+           0.049857010040610536`, -0.7000000000000001}, {
+           0.25000000000000006`, -0.7000000000000001}, {
+           0.45014298995938945`, -0.7000000000000001}, {0.45, -1.}, {
+           0.45, -1.}, {0.45, -1.}, {0.049999999999999975`, -1.}, {
+           0.049999999999999975`, -1.}}]]}}}, 
+      {AbsoluteThickness[0.5], EdgeForm[AbsoluteThickness[0.5]], FaceForm[
+       RGBColor[0.6176632, 0.3452432, 0.0819096]], 
+       BezierCurveBox[{{0., 0.30000000000000004`}, {0., 
+        0.30000000000000004`}, {0., 0.20123696602425728`}, {0., 0.2}, {0., 
+        0.06473390196485387}, {0.2, 0.2}, {0.2, 0.2}}]}, 
+      {AbsoluteThickness[0.5], EdgeForm[AbsoluteThickness[0.5]], FaceForm[
+       RGBColor[0.6176632, 0.3452432, 0.0819096]], 
+       BezierCurveBox[{{0., 0.30000000000000004`}, {0., 
+        0.30000000000000004`}, {0., 0.20123696602425728`}, {0., 0.2}, {0., 
+        0.06473390196485382}, {-0.2, 0.2}, {-0.2, 0.2}}]}},
+     ImageSize->{244.34925571561286`, 432.},
+     PlotRange->{{-0.6363261867594084, 0.6363261867594084}, {-1.025, 
+      1.225}}]}], ",", 
+   GraphicsBox[
+    {AbsolutePointSize[4], CapForm["Round"], JoinForm["Round"], Arrowheads[
+     Medium], 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOy0ZwCDD/aba7a75H86YW+1svjVTP0P9ve+
+rWqTF7tkv4hV9rDbpg/2/9awfwgzuW6/4+LCxqD4j/aHalV3i52+bf/v5HJZ
+Tr5P9sZsO45Mv3jf/ueqK33bpn6yX1+4s6Rz/kN7dcNzZ5ad/WSvdpOlOYH1
+sT23pNV51d5P9qwcM6rfij6x15Tf11u/+qP9uTMg8ATuHtNdk+ulhJ7aa9zg
+uRh746190d4snx8xT+0blOxXME95bT9RcL7C8fVP7YMaH/g9tX5pv+Zj7cvn
+PM/sf02z6vt245n9xRkhU3aXPbM/wDpdX7vkib2QUwHf4vfP7L/n2/8pE3tk
+36gh5/q/8rn9k/e/qmZPvG9v3L5a1VDihT1Tg2mlm8Zte5OZqXNnnnlh/+zK
+wdZrTNftIeH10t7EGAQu2595uXvR8Q2v7Bc84f4e6n/aXlLlzayX1q/tjZbn
+9rLMPGh/STfk0GO31/YPuh5dFri1yT74jWzkrLuv7A9tfZS+b/l0+/cuxfM/
+cr+yf3Jzx4SCyK79/2Tqrp69+8L+lQNzvPmTBftvRmZYC8c/t2dL/14Vmb9o
+/5UH0YLLZj+1vzLtxZtLSlP3u01vmp41/7G93t7CA8fye+3bk9j4XMse2ltP
+1qjt+L/R/oa/UpZxxD37Z7wFUZP/H4K6/yY0fC/YAwBLBgYT
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOy0ZwCDD/aba7a75H86YW+1svjVTP0P9ve+
+rWqTF7tkv4hV9rDbpg/2/9awfwgzuW6/4+LCxqD4j/aHalV3i52+bf/v5HJZ
+Tr5P9sZsO45Mv3jf/ueqK33bpn6yX1+4s6Rz/kN7dcNzZ5ad/WSvdpOlOYH1
+sT23pNV51d5P9qwcM6rfij6x15Tf11u/+qP9uTMg8ATuHtNdk+ulhJ7aa9zg
+uRh746190d4snx8xT+0blOxXME95bT9RcL7C8fVP7YMaH/g9tX5pv+Zj7cvn
+PM/sf02z6vt245n9xRkhU3aXPbM/wDpdX7vkib2QUwHf4vfP7L/n2/8pE3tk
+36gh5/q/8rn9k/e/qmZPvG9v3L5a1VDihT1Tg2mlm8Zte5OZqXNnnnlh/+zK
+wdZrTNftIeH10t7EGAQu2595uXvR8Q2v7Bc84f4e6n/aXlLlzayX1q/tjZbn
+9rLMPGh/STfk0GO31/YPuh5dFri1yT74jWzkrLuv7A9tfZS+b/l0+/cuxfM/
+cr+yf3Jzx4SCyK79/2Tqrp69+8L+lQNzvPmTBftvRmZYC8c/t2dL/14Vmb9o
+/5UH0YLLZj+1vzLtxZtLSlP3u01vmp41/7G93t7CA8fye+3bk9j4XMse2ltP
+1qjt+L/R/oa/UpZxxD37Z7wFUZP/H4K6/yY0fC/YAwBLBgYT
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOy0ZwCDD/aba7a75H86YW+1svjVTP0P9ve+
+rWqTF7tkv4hV9rDbpg/2/9awfwgzuW6/4+LCxqD4j/aHalV3i52+bf/v5HJZ
+Tr5P9sZsO45Mv3jf/ueqK33bpn6yX1+4s6Rz/kN7dcNzZ5ad/WSvdpOlOYH1
+sT23pNV51d5P9qwcM6rfij6x15Tf11u/+qP9uTMg8ATuHtNdk+ulhJ7aa9zg
+uRh746190d4snx8xT+0blOxXME95bT9RcL7C8fVP7YMaH/g9tX5pv+Zj7cvn
+PM/sf02z6vt245n9xRkhU3aXPbM/wDpdX7vkib2QUwHf4vfP7L/n2/8pE3tk
+36gh5/q/8rn9k/e/qmZPvG9v3L5a1VDihT1Tg2mlm8Zte5OZqXNnnnlh/+zK
+wdZrTNftIeH10t7EGAQu2595uXvR8Q2v7Bc84f4e6n/aXlLlzayX1q/tjZbn
+9rLMPGh/STfk0GO31/YPuh5dFri1yT74jWzkrLuv7A9tfZS+b/l0+/cuxfM/
+cr+yf3Jzx4SCyK79/2Tqrp69+8L+lQNzvPmTBftvRmZYC8c/t2dL/14Vmb9o
+/5UH0YLLZj+1vzLtxZtLSlP3u01vmp41/7G93t7CA8fye+3bk9j4XMse2ltP
+1qjt+L/R/oa/UpZxxD37Z7wFUZP/H4K6/yY0fC/YAwBLBgYT
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[GrayLevel[
+      0.250004]], FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOy0ZwCDD/aba7a75H86YW+1svjVTP0P9ve+
+rWqTF7tkv4hV9rDbpg/2/9awfwgzuW6/4+LCxqD4j/aHalV3i52+bf/v5HJZ
+Tr5P9sZsO45Mv3jf/ueqK33bpn6yX1+4s6Rz/kN7dcNzZ5ad/WSvdpOlOYH1
+sT23pNV51d5P9qwcM6rfij6x15Tf11u/+qP9uTMg8ATuHtNdk+ulhJ7aa9zg
+uRh746190d4snx8xT+0blOxXME95bT9RcL7C8fVP7YMaH/g9tX5pv+Zj7cvn
+PM/sf02z6vt245n9xRkhU3aXPbM/wDpdX7vkib2QUwHf4vfP7L/n2/8pE3tk
+36gh5/q/8rn9k/e/qmZPvG9v3L5a1VDihT1Tg2mlm8Zte5OZqXNnnnlh/+zK
+wdZrTNftIeH10t7EGAQu2595uXvR8Q2v7Bc84f4e6n/aXlLlzayX1q/tjZbn
+9rLMPGh/STfk0GO31/YPuh5dFri1yT74jWzkrLuv7A9tfZS+b/l0+/cuxfM/
+cr+yf3Jzx4SCyK79/2Tqrp69+8L+lQNzvPmTBftvRmZYC8c/t2dL/14Vmb9o
+/5UH0YLLZj+1vzLtxZtLSlP3u01vmp41/7G93t7CA8fye+3bk9j4XMse2ltP
+1qjt+L/R/oa/UpZxxD37Z7wFUZP/H4K6/yY0fC/YAwBLBgYT
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOzczwAGH+w312x3yf90Yr/VyuJXM/U/2N/9
+tqpNXuzS/kWssofdNn2w/7OG/UOYyfX9Oy8ubAyK/2i/v1Z1t9jp2/v/n1wu
+y8n3yd6YbceR6Rfv7/+x6krftqmf7NcV7izpnP9wv5rhuTPLzn6yV73J0pzA
++ng/t6TVedXeT/bMHDOq34o+2a8pv6+3fvVH+7NnQOAJ3D2muybXSwk93a9x
+g+di7I239gV7s3x+xDzdX69kv4J5ymv7SYLzFY6vf7o/uPGB31Prl/ZrPta+
+fM7zbP+vaVZ93248s784I2TK7rJn+w+wTtfXLnliL+hUwLf4/bP9P/Pt/5SJ
+PbJv1JBz/V/5fP+z97+qZk+8b2/cvlrVUOLFfpYG00o3jdv2JjNT584882L/
+8ysHW68xXbeHhNfL/SbGIHDZ/szL3YuOb3i1f9ET7u+h/qftJVXezHpp/Xq/
+2fLcXpaZB+0v6YYceuz2ev+zrkeXBW5tsg95Ixs56+6r/Y+2Pkrft3y6/TuX
+4vkfuV/tX3Jzx4SCyK79/2Xqrp69+2L/LQfmePMnC/bfjMywFo5/vv9n2veq
+yPxF+688iBZcNvvp/v3TXry5pDR1v9v0pulZ8x/vD9hbeOBYfq99WxIbn2vZ
+w/12kzVqO/5vtL/hr5RlHHFv/zPegqjJ/w9B3X8TGr4X7AGXnxbr
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOzczwAGH+w312x3yf90Yr/VyuJXM/U/2N/9
+tqpNXuzS/kWssofdNn2w/7OG/UOYyfX9Oy8ubAyK/2i/v1Z1t9jp2/v/n1wu
+y8n3yd6YbceR6Rfv7/+x6krftqmf7NcV7izpnP9wv5rhuTPLzn6yV73J0pzA
++ng/t6TVedXeT/bMHDOq34o+2a8pv6+3fvVH+7NnQOAJ3D2muybXSwk93a9x
+g+di7I239gV7s3x+xDzdX69kv4J5ymv7SYLzFY6vf7o/uPGB31Prl/ZrPta+
+fM7zbP+vaVZ93248s784I2TK7rJn+w+wTtfXLnliL+hUwLf4/bP9P/Pt/5SJ
+PbJv1JBz/V/5fP+z97+qZk+8b2/cvlrVUOLFfpYG00o3jdv2JjNT584882L/
+8ysHW68xXbeHhNfL/SbGIHDZ/szL3YuOb3i1f9ET7u+h/qftJVXezHpp/Xq/
+2fLcXpaZB+0v6YYceuz2ev+zrkeXBW5tsg95Ixs56+6r/Y+2Pkrft3y6/TuX
+4vkfuV/tX3Jzx4SCyK79/2Xqrp69+2L/LQfmePMnC/bfjMywFo5/vv9n2veq
+yPxF+688iBZcNvvp/v3TXry5pDR1v9v0pulZ8x/vD9hbeOBYfq99WxIbn2vZ
+w/12kzVqO/5vtL/hr5RlHHFv/zPegqjJ/w9B3X8TGr4X7AGXnxbr
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOzczwAGH+w312x3yf90Yr/VyuJXM/U/2N/9
+tqpNXuzS/kWssofdNn2w/7OG/UOYyfX9Oy8ubAyK/2i/v1Z1t9jp2/v/n1wu
+y8n3yd6YbceR6Rfv7/+x6krftqmf7NcV7izpnP9wv5rhuTPLzn6yV73J0pzA
++ng/t6TVedXeT/bMHDOq34o+2a8pv6+3fvVH+7NnQOAJ3D2muybXSwk93a9x
+g+di7I239gV7s3x+xDzdX69kv4J5ymv7SYLzFY6vf7o/uPGB31Prl/ZrPta+
+fM7zbP+vaVZ93248s784I2TK7rJn+w+wTtfXLnliL+hUwLf4/bP9P/Pt/5SJ
+PbJv1JBz/V/5fP+z97+qZk+8b2/cvlrVUOLFfpYG00o3jdv2JjNT584882L/
+8ysHW68xXbeHhNfL/SbGIHDZ/szL3YuOb3i1f9ET7u+h/qftJVXezHpp/Xq/
+2fLcXpaZB+0v6YYceuz2ev+zrkeXBW5tsg95Ixs56+6r/Y+2Pkrft3y6/TuX
+4vkfuV/tX3Jzx4SCyK79/2Xqrp69+2L/LQfmePMnC/bfjMywFo5/vv9n2veq
+yPxF+688iBZcNvvp/v3TXry5pDR1v9v0pulZ8x/vD9hbeOBYfq99WxIbn2vZ
+w/12kzVqO/5vtL/hr5RlHHFv/zPegqjJ/w9B3X8TGr4X7AGXnxbr
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      0.772079, 0.431554, 0.102387]], 
+      FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOzczwAGH+w312x3yf90Yr/VyuJXM/U/2N/9
+tqpNXuzS/kWssofdNn2w/7OG/UOYyfX9Oy8ubAyK/2i/v1Z1t9jp2/v/n1wu
+y8n3yd6YbceR6Rfv7/+x6krftqmf7NcV7izpnP9wv5rhuTPLzn6yV73J0pzA
++ng/t6TVedXeT/bMHDOq34o+2a8pv6+3fvVH+7NnQOAJ3D2muybXSwk93a9x
+g+di7I239gV7s3x+xDzdX69kv4J5ymv7SYLzFY6vf7o/uPGB31Prl/ZrPta+
+fM7zbP+vaVZ93248s784I2TK7rJn+w+wTtfXLnliL+hUwLf4/bP9P/Pt/5SJ
+PbJv1JBz/V/5fP+z97+qZk+8b2/cvlrVUOLFfpYG00o3jdv2JjNT584882L/
+8ysHW68xXbeHhNfL/SbGIHDZ/szL3YuOb3i1f9ET7u+h/qftJVXezHpp/Xq/
+2fLcXpaZB+0v6YYceuz2ev+zrkeXBW5tsg95Ixs56+6r/Y+2Pkrft3y6/TuX
+4vkfuV/tX3Jzx4SCyK79/2Xqrp69+2L/LQfmePMnC/bfjMywFo5/vv9n2veq
+yPxF+688iBZcNvvp/v3TXry5pDR1v9v0pulZ8x/vD9hbeOBYfq99WxIbn2vZ
+w/12kzVqO/5vtL/hr5RlHHFv/zPegqjJ/w9B3X8TGr4X7AGXnxbr
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+      RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[GrayLevel[
+      0.250004]], FilledCurveBox[BSplineCurve[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQPWsmCOzczwAGH+w312x3yf90Yr/VyuJXM/U/2N/9
+tqpNXuzS/kWssofdNn2w/7OG/UOYyfX9Oy8ubAyK/2i/v1Z1t9jp2/v/n1wu
+y8n3yd6YbceR6Rfv7/+x6krftqmf7NcV7izpnP9wv5rhuTPLzn6yV73J0pzA
++ng/t6TVedXeT/bMHDOq34o+2a8pv6+3fvVH+7NnQOAJ3D2muybXSwk93a9x
+g+di7I239gV7s3x+xDzdX69kv4J5ymv7SYLzFY6vf7o/uPGB31Prl/ZrPta+
+fM7zbP+vaVZ93248s784I2TK7rJn+w+wTtfXLnliL+hUwLf4/bP9P/Pt/5SJ
+PbJv1JBz/V/5fP+z97+qZk+8b2/cvlrVUOLFfpYG00o3jdv2JjNT584882L/
+8ysHW68xXbeHhNfL/SbGIHDZ/szL3YuOb3i1f9ET7u+h/qftJVXezHpp/Xq/
+2fLcXpaZB+0v6YYceuz2ev+zrkeXBW5tsg95Ixs56+6r/Y+2Pkrft3y6/TuX
+4vkfuV/tX3Jzx4SCyK79/2Xqrp69+2L/LQfmePMnC/bfjMywFo5/vv9n2veq
+yPxF+688iBZcNvvp/v3TXry5pDR1v9v0pulZ8x/vD9hbeOBYfq99WxIbn2vZ
+w/12kzVqO/5vtL/hr5RlHHFv/zPegqjJ/w9B3X8TGr4X7AGXnxbr
+        "], SplineClosed -> 
+        False, SplineDegree -> 3]]}, {
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]]}, 
+      {FaceForm[RGBColor[0.627451, 0.435294, 0.211765]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+        RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQDQMmxiDweX+j9e3SiwWn9sP427y5lVZyXt1/11B5
+6/mTn/fPBIOb+8+eAYEP+7+5Hwzd0P9yf4LNiSIh2dL9P3gqvl2+dn//LLC6
+lfYQ9Sfh/APd+utu5d3cP4nticVm30P2OSxiCgGH7u+Xkp1x5XPwTnuIuof7
+M9JA4Jm9bc3y2u3Fj/a7XXzDfOnNe3vGd9y3zS0v74e4+oM9Awr4YC9RdzOd
+/f5Nexi/4pyabLrLI/tkFcZ1ew6+h5lvDzM/x5N3tZXjA/sguUXTJ7rvsf+w
+LGBrUeFN+3knZa/5ih62nw1xvz3M/RuqhRhXXLwP5+84vbiNefJL+wfts9gc
+DGph4WMPCx97cdnPM9iv2t/MYMj4cOLz/g5I+NrDwhc9/AFkgL/Z
+          "]]]}}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.2796891822717663, 0.8312}, {-0.15719959732115016`, 
+         0.8312}, {-0.06784358710458899, 
+         0.8183051159107019}, {-0.10808918227176624`, 
+         0.7096000000000002}, {-0.18975576539928385`, 
+         0.48901498074432864`}, {-0.1915739613064544, 
+         0.48800000000000004`}, {-0.3654891822717662, 
+         0.48800000000000004`}, {-0.5394044032370782, 
+         0.48800000000000004`}, {-0.4918354128282473, 
+         0.8312}, {-0.2796891822717663, 0.8312}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{-0.22000000000000003`, 
+         0.6800000000000003}, {-0.18700000000000006`, 
+         0.6800000000000003}, {-0.16000000000000003`, 
+         0.6530000000000001}, {-0.16000000000000003`, 
+         0.6200000000000001}, {-0.16000000000000003`, 
+         0.5870000000000001}, {-0.18700000000000006`, 
+         0.5600000000000003}, {-0.22000000000000003`, 
+         0.5600000000000003}, {-0.25300000000000006`, 
+         0.5600000000000003}, {-0.2800000000000001, 
+         0.5870000000000001}, {-0.2800000000000001, 
+         0.6200000000000001}, {-0.2800000000000001, 
+         0.6530000000000001}, {-0.25300000000000006`, 
+         0.6800000000000003}, {-0.22000000000000003`, 
+         0.6800000000000003}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[
+       0.6176632, 0.3452432, 0.0819096]], EdgeForm[{RGBColor[
+       0.6176632, 0.3452432, 0.0819096], AbsoluteThickness[0.5]}], FaceForm[
+       GrayLevel[1]], 
+       FilledCurveBox[
+        BezierCurve[{{0.27373021945972514`, 0.8311999999999999}, {
+         0.15124063450910913`, 0.8311999999999999}, {0.0639690602094338, 
+         0.8190542647875968}, {0.10213021945972518`, 0.7096000000000002}, {
+         0.1787493869999932, 0.4898400446811982}, {0.18561499849441332`, 
+         0.48800000000000004`}, {0.35953021945972524`, 
+         0.48800000000000004`}, {0.533445440425037, 0.48800000000000004`}, {
+         0.48587645001620616`, 0.8311999999999999}, {0.27373021945972514`, 
+         0.8311999999999999}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FilledCurveBox[
+        BezierCurve[{{0.21404103718795892`, 0.68}, {0.18104103718795894`, 
+         0.68}, {0.15404103718795892`, 0.653}, {0.15404103718795892`, 0.62}, {
+         0.15404103718795892`, 0.587}, {0.18104103718795894`, 0.56}, {
+         0.21404103718795892`, 0.56}, {0.24704103718795895`, 0.56}, {
+         0.27404103718795897`, 0.587}, {0.27404103718795897`, 0.62}, {
+         0.27404103718795897`, 0.653}, {0.24704103718795895`, 0.68}, {
+         0.21404103718795892`, 0.68}}]]}}, {{}, 
+      {AbsoluteThickness[1], StrokeForm[{RGBColor[0, 0, 0], Opacity[0]}], 
+       EdgeForm[{RGBColor[0, 0, 0], Opacity[0], AbsoluteThickness[1]}], 
+       FaceForm[RGBColor[
+       0.20239587737599996`, 0.113129291776, 0.026840137728]], 
+       FilledCurveBox[
+        BezierCurve[{{9.771786986347106*^-19, 
+         0.06412500000000004}, {-0.09947560215024347, 
+         0.06412500000000004}, {-0.21450000000000002`, 
+         0.1841579643169986}, {-0.21450000000000002`, 
+         0.27862499999999996`}, {-0.21450000000000002`, 
+         0.3730920356830012}, {-0.20007814368243598`, 0.3858749999999999}, {
+         9.771786986347106*^-19, 0.3858749999999999}, {0.20007814368243593`, 
+         0.3858749999999999}, {0.21450000000000002`, 0.3730920356830015}, {
+         0.21450000000000002`, 0.27862499999999996`}, {0.21450000000000002`, 
+         0.1841579643169986}, {0.0994756021502434, 0.06412500000000004}, {
+         9.771786986347106*^-19, 0.06412500000000004}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}, {-0.5001429899593894, -0.9500000000000001}, \
+{-0.30000000000000004`, -0.9500000000000001}, {-0.09985701004061058, \
+-0.9500000000000001}, {-0.05000000000000002, -1.2000000000000002`}, \
+{-0.05000000000000002, -1.2000000000000002`}, {-0.05000000000000002, \
+-1.2000000000000002`}, {-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}}]]}}, {
+      {FaceForm[GrayLevel[0.250004]]}, 
+      {FaceForm[GrayLevel[0.250004]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}, {-0.5001429899593894, -0.9500000000000001}, \
+{-0.30000000000000004`, -0.9500000000000001}, {-0.09985701004061058, \
+-0.9500000000000001}, {-0.05000000000000002, -1.2000000000000002`}, \
+{-0.05000000000000002, -1.2000000000000002`}, {-0.05000000000000002, \
+-1.2000000000000002`}, {-0.55, -1.2000000000000002`}, {-0.55, \
+-1.2000000000000002`}}]]}}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{0.04999999999999996, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}, {
+         0.09985701004061052, -0.9500000000000001}, {
+         0.30000000000000004`, -0.9500000000000001}, {
+         0.5001429899593894, -0.9500000000000001}, {
+         0.55, -1.2000000000000002`}, {0.55, -1.2000000000000002`}, {
+         0.55, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}}]]}}, {{}, 
+      {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+       RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+       0.772079, 0.431554, 0.102387]], 
+       FilledCurveBox[
+        BezierCurve[{{0.04999999999999996, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}, {
+         0.09985701004061052, -0.9500000000000001}, {
+         0.30000000000000004`, -0.9500000000000001}, {
+         0.5001429899593894, -0.9500000000000001}, {
+         0.55, -1.2000000000000002`}, {0.55, -1.2000000000000002`}, {
+         0.55, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}, {
+         0.04999999999999996, -1.2000000000000002`}}]]}}, {
+      {FaceForm[GrayLevel[0.250004]]}, 
+      {FaceForm[GrayLevel[0.250004]], 
+       {AbsoluteThickness[0.5], StrokeForm[RGBColor[0, 0, 0]], EdgeForm[{
+        RGBColor[0, 0, 0], AbsoluteThickness[0.5]}], 
+        FilledCurveBox[
+         BezierCurve[{{0.04999999999999996, -1.2000000000000002`}, {
+          0.04999999999999996, -1.2000000000000002`}, {
+          0.09985701004061052, -0.9500000000000001}, {
+          0.30000000000000004`, -0.9500000000000001}, {
+          0.5001429899593894, -0.9500000000000001}, {
+          0.55, -1.2000000000000002`}, {0.55, -1.2000000000000002`}, {
+          0.55, -1.2000000000000002`}, {
+          0.04999999999999996, -1.2000000000000002`}, {
+          0.04999999999999996, -1.2000000000000002`}}]]}}}, 
+     {AbsoluteThickness[0.5], StrokeForm[RGBColor[0., 0., 0.]], EdgeForm[{
+      RGBColor[0., 0., 0.], AbsoluteThickness[0.5]}], FaceForm[RGBColor[
+      1, 0.75, 0]], 
+      BSplineCurveBox[{{-0.2, 0.05}, {0., -0.15000000000000002`}, {0.2, 0.05}},
+       SplineClosed->False,
+       SplineDegree->3]}},
+    ImageSize->{336., 460.80000000000007`},
+    PlotRange->{{-0.9, 0.8500000000000001}, {-1.2000000000000002`, 
+     1.2000000000000002`}}], ",", 
+   GraphicsBox[{
+     {EdgeForm[{RGBColor[0, 0, 0], AbsoluteThickness[0.5], Dashing[{}], 
+      CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[0.250004]], 
+      FilledCurveBox[
+       BezierCurve[{{0.1, 0.5000000000000001}, {0.1, 0.8950514793395994}, {
+        0.6000000000000001, 1.2000000000000002`}, {0.6000000000000001, 
+        1.2000000000000002`}, {0.6000000000000001, 1.2000000000000002`}, {
+        0.6973334721156528, 0.597750323159354}, {0.39999999999999997`, 
+        0.30000000000000004`}}]], 
+      FilledCurveBox[
+       BezierCurve[{{-0.1, 0.5000000000000001}, {-0.1, 
+        0.8959915297371999}, {-0.6000000000000001, 
+        1.2000000000000002`}, {-0.6000000000000001, 
+        1.2000000000000002`}, {-0.6000000000000001, 
+        1.2000000000000002`}, {-0.6954738071986608, 
+        0.6037175995962959}, {-0.4000000000000001, 
+        0.30000000000000004`}}]]}, 
+     {EdgeForm[{RGBColor[0., 0., 0.], AbsoluteThickness[0.5], Dashing[{}], 
+      CapForm["Round"], JoinForm["Round"]}], FaceForm[RGBColor[
+      0.627451, 0.435294, 0.211765]], 
+      FilledCurveBox[BezierCurve[CompressedData["
+1:eJxTTMoPSmViYGCQBGIQjQo+7G+0vl16seDUfhjfGAwe738Zae2hwIPgm4Dp
+13D+ep+pC9Nrr+2/sy33tt3/m1D5y/tnzQSBk3C+xyQVz6Kbl+D8JpEs6SOS
+T/ZHJR54NX/uJaj6h/uXgOmd9gW3t+Wujry/X8lzksr95Tft2d9x3za3vAzV
+/9ge5nIYnwMibw/jb8m9va1T9YH9LaC77kTdtIeabw8z/1K/tsuj9sf2Nc67
+z4mduAR236k9MP1w98P5GUD3fC68CedD/W/fNN++77fVNTgfLXzs1z/IC+9h
+/bC/AxK+9rDwRQ9/AGUHqxo=
+        "]]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[
+      0.6176632, 0.3452432, 0.0819096], Opacity[1], AbsoluteThickness[0.5], 
+      Dashing[{}], CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[
+      1]], FilledCurveBox[
+       BezierCurve[{{-0.21408918227176627`, 
+        0.45000000000000007`}, {-0.10273501413484251`, 
+        0.45000000000000007`}, {-0.05808918227176624, 
+        0.3993781469164114}, {-0.05808918227176624, 
+        0.29400000000000015`}, {-0.05808918227176624, 
+        0.1886218530835889}, {-0.13398443593966458`, 
+        0.13800000000000007`}, {-0.2920891822717662, 
+        0.13800000000000007`}, {-0.450193928603868, 
+        0.13800000000000007`}, {-0.4069493918685672, 
+        0.45000000000000007`}, {-0.21408918227176627`, 
+        0.45000000000000007`}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+      AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], 
+      FilledCurveBox[
+       BezierCurve[{{-0.162, 0.3900000000000001}, {-0.13340000000000005`, 
+        0.3900000000000001}, {-0.11000000000000001`, 
+        0.36660000000000004`}, {-0.11000000000000001`, 
+        0.3380000000000001}, {-0.11000000000000001`, 
+        0.3094}, {-0.13340000000000005`, 0.28600000000000014`}, {-0.162, 
+        0.28600000000000014`}, {-0.19060000000000002`, 
+        0.28600000000000014`}, {-0.21400000000000005`, 
+        0.3094}, {-0.21400000000000005`, 
+        0.3380000000000001}, {-0.21400000000000005`, 
+        0.36660000000000004`}, {-0.19060000000000002`, 
+        0.3900000000000001}, {-0.162, 0.3900000000000001}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[
+      0.6176632, 0.3452432, 0.0819096], Opacity[1], AbsoluteThickness[0.5], 
+      Dashing[{}], CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[
+      1]], FilledCurveBox[
+       BezierCurve[{{0.20813021945972515`, 0.44999999999999996`}, {
+        0.09677605132280145, 0.44999999999999996`}, {0.05213021945972518, 
+        0.3993781469164114}, {0.05213021945972518, 0.29400000000000015`}, {
+        0.05213021945972518, 0.18862185308358878`}, {0.12802547312762347`, 
+        0.13800000000000007`}, {0.2861302194597252, 0.13800000000000007`}, {
+        0.4442349657918268, 0.13800000000000007`}, {0.40099042905652604`, 
+        0.44999999999999996`}, {0.20813021945972515`, 
+        0.44999999999999996`}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+      AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], 
+      FilledCurveBox[
+       BezierCurve[{{0.15604103718795892`, 0.39}, {0.12744103718795893`, 
+        0.39}, {0.1040410371879589, 0.36660000000000004`}, {
+        0.1040410371879589, 0.33799999999999997`}, {0.1040410371879589, 
+        0.3094}, {0.12744103718795893`, 0.28600000000000014`}, {
+        0.15604103718795892`, 0.28600000000000014`}, {0.1846410371879589, 
+        0.28600000000000014`}, {0.20804103718795894`, 0.3094}, {
+        0.20804103718795894`, 0.33799999999999997`}, {0.20804103718795894`, 
+        0.36660000000000004`}, {0.1846410371879589, 0.39}, {
+        0.15604103718795892`, 0.39}}]]}, 
+     {GrayLevel[0], Opacity[1], EdgeForm[{RGBColor[0, 0, 0], Opacity[0], 
+      AbsoluteThickness[1], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], FaceForm[RGBColor[
+      0.395304448, 0.22095564799999998`, 0.052422144000000004`]], 
+      FilledCurveBox[
+       BezierCurve[{{
+        0., -2.7755575615628914`*^-17}, {-0.0463755720980156, \
+-2.7755575615628914`*^-17}, {-0.1, 0.0559594239240086}, {-0.1, 
+        0.09999999999999992}, {-0.1, 
+        0.14404057607599124`}, {-0.09327652386127552, 0.14999999999999997`}, {
+        0., 0.14999999999999997`}, {0.0932765238612755, 
+        0.14999999999999997`}, {0.1, 0.14404057607599136`}, {0.1, 
+        0.09999999999999992}, {0.1, 0.0559594239240086}, {
+        0.04637557209801557, -2.7755575615628914`*^-17}, {
+        0., -2.7755575615628914`*^-17}}]]}, 
+     {EdgeForm[{RGBColor[0, 0, 0], AbsoluteThickness[0.5], Dashing[{}], 
+      CapForm["Round"], JoinForm["Round"]}], FaceForm[GrayLevel[0.250004]], 
+      FilledCurveBox[
+       BezierCurve[{{-0.45, -1.}, {-0.45, -1.}, {-0.45014298995938945`, \
+-0.7000000000000001}, {-0.25000000000000006`, -0.7000000000000001}, \
+{-0.049857010040610564`, -0.7000000000000001}, {-0.05, -1.}, {-0.05, -1.}, \
+{-0.05, -1.}, {-0.45, -1.}, {-0.45, -1.}}]], 
+      FilledCurveBox[
+       BezierCurve[{{0.049999999999999975`, -1.}, {
+        0.049999999999999975`, -1.}, {
+        0.049857010040610536`, -0.7000000000000001}, {
+        0.25000000000000006`, -0.7000000000000001}, {
+        0.45014298995938945`, -0.7000000000000001}, {0.45, -1.}, {
+        0.45, -1.}, {0.45, -1.}, {0.049999999999999975`, -1.}, {
+        0.049999999999999975`, -1.}}]]}, 
+     {GrayLevel[0], AbsoluteThickness[0.5], Opacity[1], Dashing[{}], CapForm[
+      "Round"], JoinForm["Round"], EdgeForm[{GrayLevel[0], Opacity[1], 
+      AbsoluteThickness[0.5], Dashing[{}], CapForm["Round"], JoinForm[
+      "Round"]}], 
+      BezierCurveBox[{{0., 2.7755575615628914`*^-17}, {0., 
+       2.7755575615628914`*^-17}, {0., -0.09876303397574274}, {0., -0.1}, {
+       0., -0.23526609803514617`}, {0.2, -0.1}, {0.2, -0.1}}], 
+      BezierCurveBox[{{0., 2.7755575615628914`*^-17}, {0., 
+       2.7755575615628914`*^-17}, {0., -0.09876303397574274}, {0., -0.1}, {
+       0., -0.23526609803514617`}, {-0.2, -0.1}, {-0.2, -0.1}}]}},
+    ImageSize->{244.34925571561286`, 432.},
+    PlotRange->{{-0.6363261867594084, 0.6363261867594084}, {-1.025, 
+     1.225}}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.797536352580729*^9, 3.797536353835105*^9}, {
+   3.7975388529405403`*^9, 3.797538853321473*^9}, {3.797540485280402*^9, 
+   3.797540486249242*^9}, {3.797540758217455*^9, 3.797540798392116*^9}, {
+   3.797540973808309*^9, 3.797540975027917*^9}, 3.7975411975535507`*^9, {
+   3.797541399206437*^9, 3.7975413996520557`*^9}, {3.797541659507595*^9, 
+   3.797541659841717*^9}, {3.7975419181460238`*^9, 3.797541918461466*^9}, {
+   3.7975428253830233`*^9, 3.797542825589035*^9}, 3.797543020231036*^9, {
+   3.7975435045006533`*^9, 3.7975435146202173`*^9}, {3.797543958563738*^9, 
+   3.797543974102784*^9}, {3.797544022560053*^9, 3.79754404406676*^9}, {
+   3.797544099325708*^9, 3.797544099968543*^9}, {3.7975443117933807`*^9, 
+   3.7975443653443403`*^9}, {3.797544400679821*^9, 3.7975444046950703`*^9}, {
+   3.797545085181995*^9, 3.797545085694577*^9}, {3.797545407464473*^9, 
+   3.7975454078199797`*^9}, {3.797546064764954*^9, 3.79754606513835*^9}, {
+   3.797546278844818*^9, 3.7975462794529867`*^9}, {3.797546326504504*^9, 
+   3.797546326986885*^9}, {3.797546414356378*^9, 3.7975464148006287`*^9}, {
+   3.797546540225555*^9, 3.797546540685219*^9}, {3.797546573618874*^9, 
+   3.7975465741240253`*^9}, {3.797546647572695*^9, 3.797546648050111*^9}, {
+   3.797546689792995*^9, 3.797546690297419*^9}, {3.797546844697991*^9, 
+   3.797546845107066*^9}, {3.797546900724077*^9, 3.79754690117173*^9}, {
+   3.797547012697493*^9, 3.797547013120359*^9}, {3.797547094279155*^9, 
+   3.797547094654771*^9}, {3.797547144368341*^9, 3.797547144799293*^9}, {
+   3.79754717890272*^9, 3.797547179312303*^9}, {3.7975472362134933`*^9, 
+   3.7975472654296017`*^9}, {3.797547320975645*^9, 3.797547330345039*^9}, {
+   3.797547395385598*^9, 3.797547395757298*^9}, {3.7975474511277437`*^9, 
+   3.797547451499864*^9}, {3.797547553002743*^9, 3.797547553429206*^9}, {
+   3.79754769226434*^9, 3.797547748114188*^9}, {3.7975481834167213`*^9, 
+   3.7975481838684597`*^9}, {3.797548752953755*^9, 3.7975487592350597`*^9}, {
+   3.797548911904367*^9, 3.797548913741961*^9}, {3.797548945663301*^9, 
+   3.7975489459852448`*^9}, {3.7975493341069508`*^9, 3.797549334502349*^9}, {
+   3.797549395900125*^9, 3.79754939630438*^9}, {3.797549434889641*^9, 
+   3.79754943530311*^9}, {3.797549566855895*^9, 3.79754956724489*^9}, {
+   3.7975496156669807`*^9, 3.797549616173725*^9}, {3.797550035556321*^9, 
+   3.797550056381966*^9}, {3.797550089044105*^9, 3.797550089354383*^9}, {
+   3.7975504529503717`*^9, 3.797550453389792*^9}, {3.797550710810399*^9, 
+   3.797550711294067*^9}, {3.797550821798868*^9, 3.797550822182599*^9}, {
+   3.79755098283891*^9, 3.7975509833600063`*^9}, {3.7975510700596533`*^9, 
+   3.7975510704764223`*^9}, {3.797551245031796*^9, 3.797551245457141*^9}, {
+   3.797551604783702*^9, 3.7975516052166777`*^9}, {3.79755176531947*^9, 
+   3.797551765722563*^9}, {3.797551946664626*^9, 3.797551947251094*^9}, {
+   3.797552412064293*^9, 3.797552423450817*^9}, {3.797552556630279*^9, 
+   3.797552557144436*^9}, {3.7975526132465076`*^9, 3.797552613719102*^9}, {
+   3.808397813026668*^9, 3.808397815287876*^9}, {3.808397923584344*^9, 
+   3.808397923950783*^9}, {3.808398520705711*^9, 3.8083985210156918`*^9}, {
+   3.80839864939646*^9, 3.808398649728326*^9}, {3.808399762032215*^9, 
+   3.808399774751566*^9}, {3.808409986521986*^9, 
+   3.808410008491436*^9}},ExpressionUUID->"c636cff9-6a97-42df-b107-\
+7cb7c2f392b2"]
+}, Open  ]]
+},
+WindowSize->{1156, 856},
+WindowMargins->{{56, Automatic}, {Automatic, 48}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 20, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3f371cc4-e85c-49f3-a6d2-e566e9448514"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 232, 4, 54, "Subsection",ExpressionUUID->"b4897942-541a-45ab-a161-02fd2b80fbdf"],
+Cell[CellGroupData[{
+Cell[837, 30, 231, 4, 32, "Item",ExpressionUUID->"dfe500b9-782d-41d6-a434-14728a8f54ae"],
+Cell[1071, 36, 339, 5, 32, "Item",ExpressionUUID->"15b30c48-8c3d-4289-b405-5c1d2a50bf78"],
+Cell[1413, 43, 374, 8, 32, "Item",ExpressionUUID->"13120142-344f-4530-93a4-59290511182e"]
+}, Open  ]],
+Cell[1802, 54, 83933, 1459, 1929, "Input",ExpressionUUID->"c636cff9-6a97-42df-b107-7cb7c2f392b2"]
+}, Open  ]]
+}
+]
+*)
+
