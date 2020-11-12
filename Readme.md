@@ -5,7 +5,7 @@ WLDraw is an application to create Wolfram Language Graphics. It was created ent
 
 ### Using WLDraw
 
-Evaluate Get["myDirectory/wldraw/WLDrawPackage.wl"] in a notebook. Change "myDirectory" to location of wldraw repository. After WLDraw opens, click the blue help button for basic information. Works best in latest version Wolfram Language.
+Evaluate Get["myDirectory/wldraw-main/WLDrawPackage.wl"] in a notebook. Change "myDirectory" to location of wldraw repository. After WLDraw opens, click the blue help button for basic information. Works best in latest version Wolfram Language.
 
 ### WLDraw development
 
