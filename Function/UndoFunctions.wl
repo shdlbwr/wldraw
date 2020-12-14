@@ -14,9 +14,9 @@ dwSetUndo[]:=
 	
 dwGetCurrentState[]:= {$dwP, $dwHead, $dwStyle, $dwPlotRange, $dwGroupLayers, $dwCompoundPathLayers, $dwBoundingBoxes, $dwObjectGradients, $dwLineGradients, $dwAnimate, $dwMode, $dwSelected, $dwPointModeSelections, $dwCurrentPreviewMode, $dwObjectQuantity, $dwPointQuantity, $dwHideLayers}
 
-dwSetCurrentState[var_,n_]:=
-	If[Length[ReleaseHold[var]]>=1,
-		{$dwP, $dwHead, $dwStyle, $dwPlotRange, $dwGroupLayers, $dwCompoundPathLayers, $dwBoundingBoxes, $dwObjectGradients, $dwLineGradients, $dwAnimate, $dwMode, $dwSelected, $dwPointModeSelections, $dwCurrentPreviewMode, $dwObjectQuantity, $dwPointQuantity, $dwHideLayers} = ReleaseHold[var][[n,Range[17]]];
+dwSetCurrentState[var_, n_]:=
+	If[Length[ReleaseHold[var]] >= 1,
+		{$dwP, $dwHead, $dwStyle, $dwPlotRange, $dwGroupLayers, $dwCompoundPathLayers, $dwBoundingBoxes, $dwObjectGradients, $dwLineGradients, $dwAnimate, $dwMode, $dwSelected, $dwPointModeSelections, $dwCurrentPreviewMode, $dwObjectQuantity, $dwPointQuantity, $dwHideLayers} = ReleaseHold[var][[n, Range[17]]];
 	]
 
 End[] (* End Private Context *)

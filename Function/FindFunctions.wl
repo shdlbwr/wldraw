@@ -80,6 +80,7 @@ dwFindSide[pts_:{{0,0}}, side_:{Left,Center}, discretize_:None, n_:None]:=
 		Switch[Length@DeleteDuplicates[pts],
 			0, {0,0},
 			1, DeleteDuplicates[pts][[1]],
+			2, RegionCentroid[Line[DeleteDuplicates[pts]]],
 			_,
 				If[side==={0,0},
 					{0,0},

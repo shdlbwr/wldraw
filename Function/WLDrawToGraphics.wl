@@ -63,7 +63,7 @@ dwWLDrawToGraphics[OptionsPattern[]]:=
 								Switch[$dwStyle[[n,8,1]],
 									"OpacityGradient",
 										pts = DeleteDuplicates[$dwP[[n]]];
-										Polygon[pts, VertexColors->Table[Opacity[Rescale[If[n1<=Length[pts]/2,(n1-1),(Length[pts]-n1)],{0,(Length[pts]-1)/2}],Blend[$dwStyle[[n,8,2]],If[n1<=Length[pts]/2,n1/(Length[pts]/2),((Length[pts])-(n1-1))/(Length[pts]/2)]]],{n1,Length[pts]}]],
+										Polygon[pts, VertexColors->Table[Opacity[Rescale[If[n1<=Length[pts]/2,(n1-1),(Length[pts]-n1)],{0,1}],Blend[$dwStyle[[n,8,2]],If[n1<=Length[pts]/2,n1/(Length[pts]/2),((Length[pts])-(n1-1))/(Length[pts]/2)]]],{n1,Length[pts]}]],
 									{"BlendGradient", _, _, _},
 										If[n != $dwStyle[[n,8,1,2]],
 											blendPts = dwBlends[$dwBlendResolution, "ReturnPoints"->True, "BlendObjects"->{n, $dwStyle[[n,8,1,2]]}, "Quantity"->$dwStyle[[n,8,1,3]], "Radiate"->$dwStyle[[n,8,1,4]]];

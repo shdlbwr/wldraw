@@ -55,29 +55,29 @@ dwReplaceImage[sel_]:=
 	CreateDialog[
 		DynamicModule[{left = 0, top = 0, right = 0, bottom = 0,
 			horiz = 0, vert = 0, scaleh = 1, scalev = 1, shearh = 0,
-			shearv = 0, tilth = 0, tiltv = 0, zoom = 1},
+			shearv = 0, tilth = 0, tiltv = 0, zoom = 1, img = $dwStyle[[sel, 2]]},
 			Pane[
 				Dynamic@Column[{
 					Grid[{
 						{
 							Column[{
-								InputField[Dynamic[$dwStyle[[sel, 2]]], ImageSize->{90, 90}],
+								InputField[Dynamic[img], ImageSize->{90, 90}],
 								Pane[Style["Delete above and paste new image or graphics", 10, Italic, LineIndent->0], ImageSize->90],
 								"",
 								Row[{Checkbox[Dynamic@$dwStyle[[sel,5]]]," remove background"}]
 							}], 
 							Spacer[20],
 							Pane[
-								If[Head[$dwStyle[[sel, 2]]] =!= Image,
+								If[Head[img] =!= Image,
 									
 									Overlay[{
-										Dynamic@ImageTrim[Rasterize[$dwStyle[[sel, 2]], Background->None, ImageSize->{470,300}, ImageResolution->$dwImageResolution], {{left, 1-top}, {1-right, bottom}}, DataRange -> {{0, 1}, {0, 1}}],
+										Dynamic@ImageTrim[Rasterize[img, Background->None, ImageSize->{470,300}, ImageResolution->$dwImageResolution], {{left, 1-top}, {1-right, bottom}}, DataRange -> {{0, 1}, {0, 1}}],
 										Graphics[{White, AbsoluteDashing[{1, 3}], Line[{{0, -1}, {0, 1}}], Line[{{-1, 0}, {1, 0}}], Line[{{-1, -1}, {1, 1}}], Line[{{-1, 1}, {1, -1}}]}, 
 										Background -> None, ImageSize -> {470, 300}, PlotRange -> 1]
 									}],
 									
 									Overlay[{
-										Dynamic@ImageTrim[Show[ImagePerspectiveTransformation[$dwStyle[[sel, 2]], {{scaleh, Tan[shearh*Pi/180], horiz}, {Tan[shearv*Pi/180], scalev, vert}, {Tan[tiltv*Pi/180], Tan[tilth*Pi/180], 2-zoom}}, 
+										Dynamic@ImageTrim[Show[ImagePerspectiveTransformation[img, {{scaleh, Tan[shearh*Pi/180], horiz}, {Tan[shearv*Pi/180], scalev, vert}, {Tan[tiltv*Pi/180], Tan[tilth*Pi/180], 2-zoom}}, 
 											Background->Transparent, Masking->All], ImageSize->{470,300}], {{left, 1-top}, {1-right, bottom}}, DataRange -> {{0, 1}, {0, 1}}],
 										Graphics[{White, AbsoluteDashing[{1, 3}], Line[{{0, -1}, {0, 1}}], Line[{{-1, 0}, {1, 0}}], Line[{{-1, -1}, {1, 1}}], Line[{{-1, 1}, {1, -1}}]}, 
 										Background -> None, ImageSize -> {470, 300}, PlotRange -> 1]
@@ -121,14 +121,15 @@ dwReplaceImage[sel_]:=
 							scaleh = 1; scalev = 1; shearh = 0; shearv = 0; tilth = 0; tiltv = 0; zoom = 1],
 						Button["Cancel", DialogReturn[]],
 						DefaultButton[
-							If[$dwStyle[[sel, 2]] === Null,
+							If[img === Null,
 								
 								$dwStyle[[sel, 2]] = $dwImageFilterImageDefault,
 								
 								(*If[Head[$dwStyle[[sel, 2]]] =!= Image,
 									$dwStyle[[sel, 2]] = Rasterize[Show[$dwStyle[[sel, 2]], ImageSize->ImageDimensions[$dwStyle[[sel, 2]]], ImageResolution->$dwImageResolution], Background->None]
 								];*)
-								$dwStyle[[sel, 2]] = Rasterize[Show[$dwStyle[[sel, 2]], ImageSize->ImageDimensions[$dwStyle[[sel, 2]]]], ImageResolution->$dwImageResolution, Background->None];
+								img = If[Head[img] =!= Image, Rasterize[img], img];
+								$dwStyle[[sel, 2]] = Rasterize[Show[img, ImageSize->ImageDimensions[img]], ImageResolution->$dwImageResolution, Background->None];
 								If[Total[ImageDimensions[$dwStyle[[sel, 2]]]] > 2*$dwImagePastedMaxSize,
 									(* resize *)
 									$dwStyle[[sel, 2]] = 
